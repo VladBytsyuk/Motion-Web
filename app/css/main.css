@@ -744,6 +744,30 @@ pricing_box_item_accent_header {
       -ms-flex-align: center;
           align-items: center; }
 
+pricing_box_item_header_title {
+  padding-top: 8px;
+  padding-bottom: 4px;
+  font-size: 40pt;
+  color: #616161; }
+
+pricing_box_item_accent_header_title {
+  padding-top: 8px;
+  padding-bottom: 4px;
+  font-size: 40pt;
+  color: #eb4f4e; }
+
+pricing_box_item_header_subtitle {
+  padding-top: 4px;
+  padding-bottom: 16px;
+  font-size: 20pt;
+  color: #eb4f4e; }
+
+pricing_box_item_accent_header_subtitle {
+  ppadding-top: 4px;
+  padding-bottom: 16px;
+  font-size: 20pt;
+  color: #616161; }
+
 pricing_box_item_options {
   display: -webkit-box;
   display: -webkit-flex;
@@ -787,6 +811,12 @@ pricing_box_item_accent_options {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ececec; }
+
+pricing_box_item_order {
+  background-color: #eb4f4e; }
+
+pricing_box_item_accent_order {
+  background-color: #eb4f4e; }
 
 pricing_info {
   font-size: 20pt;
