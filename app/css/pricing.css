@@ -199,6 +199,16 @@ pricing_box_item_accent_options {
           align-items: center;
   background-color: #ececec; }
 
+pricing_box_item_options_option {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #616161; }
+
+pricing_box_item_accent_options_option {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #616161; }
+
 pricing_box_item_order {
   background-color: #eb4f4e; }
 

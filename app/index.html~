@@ -1,1 +1,212 @@
-s
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Motion</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- ========= HEADER ========= -->
+    <header>
+      <header_navbar>
+        <header_navbar_top>
+          <header_navbar_top_logo>
+            <header_navbar_top_logo_title>
+              <img src="/img/logo.png" style="width: 66px">
+              <header_navbar_top_logo_title_text>Motion</header_top_logo_title_text>
+            </header_navbar_top_logo_title>
+            <header_navbar_top_logo_subtitle>Asingle Page Template</header_top_logo_subtitle>
+          </header_navbar_top_logo>
+          <header_navbar_top_menu>
+            <header_navbar_top_menu_item_highlighted>Home</header_navbar_top_menu_item_highlighted>
+            <header_navbar_top_menu_item>About</header_navbar_top_menu_item>
+            <header_navbar_top_menu_item>Team</header_navbar_top_menu_item>
+            <header_navbar_top_menu_item>Portfolio</header_navbar_top_menu_item>
+            <header_navbar_top_menu_item>Other</header_navbar_top_menu_item>
+            <header_navbar_top_menu_item>Contact</header_navbar_top_menu_item>
+	      </header_navbar_top_menu>
+	    </header_navbar_top>
+		<header_navbar_corner>
+		  <img src="/img/corner.png"></imgr>
+		</header_navbar_corner>
+	  </header_navbar>
+      <header_slider>
+	    <header_slider_title>Welcome to Motion</header_slider_title>
+	    <header_slider_subtitle>Asmart & Creative Single Page Template</header_slider_subtitle>
+	    <img src="/img/slider.png"></header_slider>
+	   </header_slider>
+	 </header>
+	 <!-- ========= MERITS ========= -->
+    <merits>
+      <merits_top>
+	    <merits_top_title>Smart & Creative</merits_top_title>
+	    <merits_top_subtitle>This is why you will use it :)</merits_top_subtitle>
+	  </merits_top>
+   	<merits_box>
+   	  <merits_box_item>
+   		<img src="/img/multi.png">
+   	    <merits_box_item_title>Multi purpose</merits_box_item_title>
+   		<merits_box_item_subtitle>Lorem ipsum dolor sit amet, consectetur adipisicing..</merits_box_item_subtitle>
+   	  </merits_box_item>
+   	  <merits_box_item>
+   	    <img src="/img/flat.png">
+   	    <merits_box_item_title>Flat UI</merits_box_item_title>
+   	    <merits_box_item_subtitle>Lorem ipsum dolor sit amet, consectetur adipisicing..</merits_box_item_subtitle>
+   	  </merits_box_item>
+   	  <merits_box_item>
+   		<img src="/img/creative.png">
+   		<merits_box_item_title>Creative design</merits_box_item_title>
+   		<merits_box_item_subtitle>Lorem ipsum dolor sit amet, consectetur adipisicing..</merits_box_item_subtitle>
+   	  </merits_box_item>
+   	</merits_box>	
+    </merits>
+    <!-- ========= TEAM ========= -->
+    <team>
+      <team_top>
+   	  <team_top_title>Talented & Experts</team_top_title>
+   	  <team_top_subtitle>This is our team :)</team_top_subtitle>
+   	</team_top>
+   	<team_box>
+   	  <team_box_item>
+   		<img src="/img/mahmoud.png">
+   		<team_box_item_name>Mahmoud Baghagho</team_box_item_name>
+   		<team_box_item_position>Senior UI Designer</team_box_item_position>
+   		<team_box_item_button>
+   		  <img src="/img/tweet.png">
+   		  <team_box_item_button_text>Follow</team_box_item_button_text>
+   		</team_box_item_button>
+   	  </team_box_item>
+   	  <team_box_item>
+   		<img src="/img/abd.png">
+   		<team_box_item_name>Abd ElRahman</team_box_item_name>
+   		<team_box_item_position>Senior App Developer</team_box_item_position>
+   		<team_box_item_button>
+   		  <img src="/img/tweet.png">
+   		  <team_box_item_button_text>Follow</team_box_item_button_text>
+   		</team_box_item_button>
+   	  </team_box_item>
+   	  <team_box_item>
+   		<img src="/img/mostafa.png">
+   		<team_box_item_photo></team_box_item_photo>
+   		<team_box_item_name>Mostafa Amin</team_box_item_name>
+   		<team_box_item_position>Senior Graphic Designer</team_box_item_position>
+   		<team_box_item_button>
+   		  <img src="/img/tweet.png">
+   		  <team_box_item_button_text>Follow</team_box_item_button_text>
+   		</team_box_item_button>
+   	  </team_box_item>
+   	  <team_box_item>
+   		<img src="/img/ahmed.png">
+   		<team_box_item_name>Ahmed Ali</team_box_item_name>
+   		<team_box_item_position>Senior Web Developer</team_box_item_position>
+   		<team_box_item_button>
+   		  <img src="/img/tweet.png">
+   		  <team_box_item_button_text>Follow</team_box_item_button_text>
+   	    </team_box_item_button>
+   	  </team_box_item>
+   	</team_box>
+    </team>
+    <!-- ========= PORTFOLIO ========= -->
+    <portfolio>
+      <portfolio_top>
+    	<portfolio_top_title>Elegant & Genuine</portfolio_top_title>
+   		<portfolio_top_subtitle>This is how our works looks like :)</portfolio_top_subtitle>
+   	  </portfolio_top>
+      <portfolio_slider>
+	    <img src="/img/arrow-left.png">
+   	    <portfolio_slider_box>
+          <portfolio_slider_box_item>
+            <img src="/img/sms-clouds.png" style=" border-radius: 8px ">
+   		    <portfolio_slider_box_item_name>SMS Clouds</portfolio_box_item_name>
+   	    </portfolio_slider_box_item>
+        <portfolio_slider_box_item>
+          <img src="/img/blue-apple.png" style=" border-radius: 8px ">
+   	      <portfolio_slider_box_item_name>Blue Apple Soft</portfolio_box_item_name>
+        </portfolio_slider_box_item>
+        <portfolio_slider_box_item>
+   	      <img src="/img/together-app.png" style=" border-radius: 8px ">
+          <portfolio_slider_box_item_name>Together Application</portfolio_box_item_name>
+        </portfolio_slider_box_item>
+   	    <portfolio_slider_box_item>
+   	      <img src="/img/fc-barcelona.png" style=" border-radius: 8px ">
+   		  <portfolio_slider_box_item_name>FCBarcelona Club</portfolio_box_item_name>
+        </portfolio_slider_box_item>
+   	  </portfolio_slider_box>
+	  <img src="/img/arrow-right.png">
+	</portfolio_slider>
+	<portfolio_pages>
+	  <portfolio_pages_item>s</portfolio_pages_item>
+	  <portfolio_pages_item>s</portfolio_pages_item>
+	  <portfolio_pages_item>s</portfolio_pages_item>
+	  <portfolio_pages_item_highlighted>s</portfolio_pages_item_highlighted>
+	</portfolio_pages>
+    </portfolio> 
+    <!-- ========= PRICING ========= -->
+    <pricing>
+      <pricing_box>
+        <pricing_box_item>
+          <pricing_box_item_header>
+            <pricing_box_item_header_title>Start Up</pricing_box_item_header_title>
+            <pricing_box_item_header_subtitle>For beginners</pricing_box_item_header_subtitle>
+          </pricing_box_item_header>
+          <pricing_box_item_options>
+            <pricing_box_item_options_option>Basic pages</pricing_box_item_options_option>
+            <pricing_box_item_options_option>MySQL Databases</pricing_box_item_options_option>
+            <pricing_box_item_options_option>Bandwidth</pricing_box_item_options_option>
+            <pricing_box_item_options_option>Storage space</pricing_box_item_options_option>
+          </pricing_box_item_options>
+          <pricing_box_item_order>
+            <pricing_box_item_order_price>
+              <pricing_box_item_order_price_dol>$</pricing_box_item_order_price_dol>
+              <pricing_box_item_order_price_value>15</pricing_box_item_order_price_value>
+              <pricing_box_item_order_price_periodicity>/mo</pricing_box_item_order_price_periodicity>
+            </pricing_box_item_order_price>
+            <pricing_box_item_order_button>Order</pricing_box_item_order_button>
+          </pricing_box_item_order>
+        </pricing_box_item>
+        <pricing_box_item_accent>
+          <pricing_box_item_accent_header>
+            <pricing_box_item_accent_header_title>Standart</pricing_box_item_accent_header_title>
+            <pricing_box_item_accent_header_subtitle>More than what you have dreamed with</pricing_box_item_accent_header_subtitle>
+          </pricing_box_item_accent_header>
+          <pricing_box_item_accent_options>
+            <pricing_box_item_accent_options_option>Standart pages</pricing_box_item_accent_options_option>
+            <pricing_box_item_accent_options_option>MySQL Databases</pricing_box_item_accent_options_option>
+            <pricing_box_item_accent_options_option>Bandwidth</pricing_box_item_accent_options_option>
+            <pricing_box_item_accent_options_option>Storage space</pricing_box_item_accent_options_option>
+          </pricing_box_item_accent_options>
+          <pricing_box_item_accent_order>
+            <pricing_box_item_accent_order_price>
+              <pricing_box_item_accent_order_price_dol>$</pricing_box_item_accent_order_price_dol>
+              <pricing_box_item_accent_order_price_value>15</pricing_box_item_accent_order_price_value>
+              <pricing_box_item_accent_order_price_periodicity>/mo</pricing_box_item_accent_order_price_periodicity>
+            </pricing_box_item_accent_order_price>
+            <pricing_box_item_accent_order_button>Order</pricing_box_item_accent_order_button>
+          </pricing_box_item_accent_order>
+        </pricing_box_item_accent>
+        <pricing_box_item>
+          <pricing_box_item_header>
+            <pricing_box_item_header_title>Professional</pricing_box_item_header_title>
+            <pricing_box_item_header_subtitle>For smart people</pricing_box_item_header_subtitle>
+          </pricing_box_item_header>
+          <pricing_box_item_options>
+            <pricing_box_item_options_option>Basic pages</pricing_box_item_options_option>
+            <pricing_box_item_options_option>MySQL Databases</pricing_box_item_options_option>
+            <pricing_box_item_options_option>Bandwidth</pricing_box_item_options_option>
+            <pricing_box_item_options_option>Storage space</pricing_box_item_options_option>
+          </pricing_box_item_options>
+          <pricing_box_item_order>
+            <pricing_box_item_order_price>
+              <pricing_box_item_order_price_dol>$</pricing_box_item_order_price_dol>
+              <pricing_box_item_order_price_value>35</pricing_box_item_order_price_value>
+              <pricing_box_item_order_price_periodicity>/mo</pricing_box_item_order_price_periodicity>
+            </pricing_box_item_order_price>
+            <pricing_box_item_order_button>Order</pricing_box_item_order_button>
+          </pricing_box_item_order>
+        </pricing_box_item>
+      </pricing_box>
+      <pricing_info>And more available plans for all needs .... Check here</pricing_info>
+    </pricing>
+  </body>
+</html>
