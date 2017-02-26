@@ -1,18 +1,17 @@
-$team_background: #6cc372
-$team_green_text: #61af66
-$team_orange_text: #e74c3c
+$background: #6cc372
+$text_green: #61af66
+$text_orange: #e74c3c
 
 /* ==== TEAM ==== */
 
 team
-	background-color: $team_background
 	padding: 20px
-	font-family: 'bariol'
 	display: flex
 	justify-content: center
 	flex-wrap: wrap
 	flex-direction: column
 	align-items: center
+	background-color: $background
 
 team_top
 	padding: 40px
@@ -23,15 +22,15 @@ team_top
 	align-items: center
 
 team_top_title
-	color: white
+	padding: 20px
 	font-size: 40pt
 	font-weight: bold
 	letter-spacing: 5px
-	padding: 20px
+	color: white
 
 team_top_subtitle
-	color: black
 	font-size: 20pt
+	color: black
 
 team_box
 	width: 65%
@@ -43,52 +42,52 @@ team_box
 
 team_box_item
 	width: 230px
+	margin: 8px
+	padding: 8px
 	display: flex
+	border-radius: 4px
 	justify-content: center
 	flex-wrap: wrap
 	flex-direction: column
 	align-items: center
-	margin: 8px
 	background-color: white
-	border-radius: 4px
 	flex-grow: 2
-	padding: 8px
 
 team_box_item_name
-	color: $team_green_text
 	font-size: 25pt
 	padding-top: 16px
 	text-align: center
 	white-space: nowrap
+	color: $text_green
 
 team_box_item_position
-	color: $team_orange_text
-	font-size: 18pt
-	text-align: center
 	padding-top: 16px
 	padding-bottom: 16px
+	font-size: 18pt
+	text-align: center
 	white-space: nowrap
+	color: $text_orange
 
 @media(max-width: 1079px) 
 	team_box_item_name
-		white-space: normal
 		word-wrap: break-word
+		white-space: normal
 	team_box_item_position
-		white-space: normal
 		word-wrap: break-word
+		white-space: normal
 
 team_box_item_button
 	width: 90%
-	background-color: $team_green_text
-	border-radius: 4px
-	font-size: 25pt
-	color: white
 	padding: 4px
+	border-radius: 4px
 	display: flex
 	justify-content: left
 	align-items: center
 	flex-direction: row
 	flex-wrap: nowrap
+	font-size: 25pt
+	color: white
+	background-color: $text_green
 
 team_box_item_button_text
 	padding-left: 16px

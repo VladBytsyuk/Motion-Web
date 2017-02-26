@@ -1,28 +1,27 @@
-$header_background: #eb4f4e
-$header_top_background: #f56262
+$background: #eb4f4e
+$top_background: #f56262
 
 /* ==== HEADER ==== */
 header
-	font-family: 'bariol'
 	color: white
 
 header_navbar
-	background-color: $header_background
 	width: 100%
 	min-width: 60px
 	display: flex
 	justify-content: space-around
 	flex-wrap: nowrap
+	background-color: $background
 
 header_navbar_top
 	min-width: 60px
 	padding-top: 20px
 	padding-bottom: 20px
-	background-color: $header_top_background
 	display: flex
 	justify-content: space-around
 	flex-wrap: wrap
-	flex: 500 0 0
+	flex-grow: 500
+	background-color: $top_background
 
 
 /* LOGO */
@@ -52,7 +51,6 @@ header_navbar_top_menu
 	-webkit-justify-content: center
 	font-size: 16pt
 	font-weight: bold
-	color: white
 
 header_navbar_top_menu_item_highlighted
 	padding-top: 5px
@@ -60,8 +58,8 @@ header_navbar_top_menu_item_highlighted
 	padding-bottom: 5px
 	padding-left: 15px
 	margin-right: 25px
-	background-color: black
 	border-radius: 4px
+	background-color: black
 
 header_navbar_top_menu_item
 	padding-right: 40px
@@ -71,27 +69,26 @@ header_navbar_top_menu_item
 /* CORNER */
 
 header_navbar_corner
-	background-color: $header_top_background
 	float: right
-	flex: 1 0 0
+	flex-grow: 1
+	background-color: $top_background
 
 
 /* SLIDER */
 
 header_slider
-	background-color: $header_background
+	padding: 40px
 	display: flex
 	justify-content: center
 	flex-wrap: wrap
 	flex-direction: column
 	align-items: center
 	font-weight: bold
-	color: white
-	padding: 40px
+	background-color: $background
 
 header_slider_title
-	letter-spacing: 10px
 	font-size: 60pt
+	letter-spacing: 10px
 
 header_slider_subtitle
 	padding: 40px
