@@ -132,10 +132,6 @@ portfolio_slider_box_item {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-portfolio_slider_box_item_mask {
-  -webkit-border-radius: 50%;
-          border-radius: 50%; }
-
 portfolio_slider_box_item_name {
   padding-top: 16px;
   font-size: 21pt;
