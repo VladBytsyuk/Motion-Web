@@ -1,0 +1,23 @@
+pricing_box_item_order {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  background-color: #eb4f4e;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  -webkit-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px; }
+
+pricing_box_item_accent_order {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  background-color: #eb4f4e;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  -webkit-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px; }
