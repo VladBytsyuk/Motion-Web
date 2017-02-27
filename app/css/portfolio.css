@@ -1,7 +1,7 @@
 /* ==== PORTFOLIO ==== */
 portfolio {
   padding: 20px;
-  padding-bottom: 320px;
+  padding-bottom: 160px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,6 +22,7 @@ portfolio {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #cacaca;
   background-color: #ececec; }
 
 portfolio_top {

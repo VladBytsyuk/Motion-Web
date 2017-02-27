@@ -25,6 +25,7 @@ pricing {
 
 pricing_box {
   width: 70%;
+  margin-top: -175px;
   padding-left: 72px;
   padding-right: 72px;
   display: -webkit-box;
@@ -48,6 +49,9 @@ pricing_box {
           align-items: flex-end; }
 
 pricing_box_item {
+  width: 20%;
+  min-width: 300px;
+  padding-top: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -69,6 +73,9 @@ pricing_box_item {
           align-items: center; }
 
 pricing_box_item_accent {
+  width: 20%;
+  min-width: 300px;
+  padding-top: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -90,6 +97,7 @@ pricing_box_item_accent {
           align-items: center; }
 
 pricing_box_item_header {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -105,12 +113,19 @@ pricing_box_item_header {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-color: white;
+  border: 1px solid #ececec;
+  border-bottom: 1px solid #cacaca;
+  -webkit-border-radius: 4px 4px 0 0;
+          border-radius: 4px 4px 0 0; }
 
 pricing_box_item_accent_header {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -126,10 +141,16 @@ pricing_box_item_accent_header {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  border: 1px solid #ececec;
+  border-bottom: 1px solid #cacaca;
+  background-color: white;
+  -webkit-border-radius: 4px 4px 0 0;
+          border-radius: 4px 4px 0 0; }
 
 pricing_box_item_header_title {
   padding-top: 8px;
@@ -156,6 +177,7 @@ pricing_box_item_accent_header_subtitle {
   color: #616161; }
 
 pricing_box_item_options {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -175,9 +197,13 @@ pricing_box_item_options {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
   background-color: #ececec; }
 
 pricing_box_item_accent_options {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -197,24 +223,50 @@ pricing_box_item_accent_options {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
   background-color: #ececec; }
 
 pricing_box_item_options_option {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid black;
   color: #616161; }
 
 pricing_box_item_accent_options_option {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid black;
   color: #616161; }
 
 pricing_box_item_order {
-  background-color: #eb4f4e; }
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  background-color: #eb4f4e;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  -webkit-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px; }
 
 pricing_box_item_accent_order {
-  background-color: #eb4f4e; }
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  background-color: #eb4f4e;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  -webkit-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px; }
 
 pricing_info {
   font-size: 20pt;
+  padding: 40px;
   color: #eb4f4e; }

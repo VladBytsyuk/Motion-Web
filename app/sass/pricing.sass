@@ -1,6 +1,8 @@
 $background_gray: #ececec
+$bottom_line: #cacaca
 $text_red: #eb4f4e
 $text_gray: #616161
+$option_padding: 16px
 
 pricing
 	padding: 20px
@@ -14,6 +16,7 @@ pricing
 
 pricing_box
 	width: 70%
+	margin-top: -175px
 	padding-left: 72px
 	padding-right: 72px
 	display: flex
@@ -23,6 +26,9 @@ pricing_box
 	align-items: flex-end
 
 pricing_box_item
+	width: 20%
+	min-width: 300px
+	padding-top: 8px
 	display: flex
 	justify-content: space-around
 	flex-wrap: wrap
@@ -30,6 +36,9 @@ pricing_box_item
 	align-items: center
 
 pricing_box_item_accent
+	width: 20%
+	min-width: 300px
+	padding-top: 8px
 	display: flex
 	justify-content: space-around
 	flex-wrap: wrap
@@ -37,18 +46,30 @@ pricing_box_item_accent
 	align-items: center
 
 pricing_box_item_header
+	width: 100%
 	display: flex
 	justify-content: space-around
 	flex-wrap: wrap
 	flex-direction: column
+	text-align: center
 	align-items: center
+	background-color: white
+	border: 1px solid $background-gray
+	border-bottom: 1px solid $bottom_line
+	border-radius: 4px 4px 0 0
 
 pricing_box_item_accent_header
+	width: 100%
 	display: flex
 	justify-content: space-around
 	flex-wrap: wrap
 	flex-direction: column
+	text-align: center
 	align-items: center
+	border: 1px solid $background-gray
+	border-bottom: 1px solid $bottom_line
+	background-color: white
+	border-radius: 4px 4px 0 0
 
 pricing_box_item_header_title
 	padding-top: 8px
@@ -75,39 +96,68 @@ pricing_box_item_accent_header_subtitle
 	color: $text_gray
 
 pricing_box_item_options
+	width: 100%
 	display: flex
 	justify-content: space-around
 	flex-wrap: wrap
 	flex-direction: column
 	align-items: center
+	text-align: center
+	border-left: 1px solid $background-gray
+	border-right: 1px solid $background-gray
 	background-color: $background-gray
 
 pricing_box_item_accent_options
+	width: 100%
 	display: flex
 	justify-content: space-around
 	flex-wrap: wrap
 	flex-direction: column
 	align-items: center
+	text-align: center
+	border-left: 1px solid $background-gray
+	border-right: 1px solid $background-gray
 	background-color: $background-gray
 
 pricing_box_item_options_option
-	padding-top: 8px
-	padding-bottom: 8px
+	width: 100%
+	padding-top: $option_padding
+	padding-bottom: $option_padding
+	border-bottom: 1px solid black
 	color: $text_gray
 
 pricing_box_item_accent_options_option
-	padding-top: 8px
-	padding-bottom: 8px
+	width: 100%
+	padding-top: $option_padding
+	padding-bottom: $option_padding
+	border-bottom: 1px solid black
 	color: $text_gray
 
 pricing_box_item_order
+	width: 100%
+	padding-top: $option_padding
+	padding-bottom: $option_padding
+	text-align: center
 	background-color: $text_red
+	border-left: 1px solid $background-gray
+	border-right: 1px solid $background-gray
+	border-bottom: 1px solid $background-gray
+	border-radius: 0 0 4px 4px
 
 pricing_box_item_accent_order
+	width: 100%
+	padding-top: $option_padding
+	padding-bottom: $option_padding
+	text-align: center
 	background-color: $text_red
+	border-left: 1px solid $background-gray
+	border-right: 1px solid $background-gray
+	border-bottom: 1px solid $background-gray
+	border-radius: 0 0 4px 4px
 
 
 pricing_info
 	font-size: 20pt
+	padding: 40px
 	color: $text_red
 	
