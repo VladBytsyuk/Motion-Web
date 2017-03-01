@@ -19,7 +19,6 @@ pricing_box_item_options {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
   background-color: #ececec; }
@@ -45,7 +44,6 @@ pricing_box_item_accent_options {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
   background-color: #ececec; }

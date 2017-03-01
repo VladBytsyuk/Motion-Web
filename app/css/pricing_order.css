@@ -23,7 +23,6 @@ pricing_box_item_order {
   -webkit-flex: nowrap;
       -ms-flex: nowrap;
           flex: nowrap;
-  text-align: center;
   background-color: #eb4f4e;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
@@ -58,7 +57,6 @@ pricing_box_item_accent_order {
   -webkit-flex: nowrap;
       -ms-flex: nowrap;
           flex: nowrap;
-  text-align: center;
   background-color: #eb4f4e;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;

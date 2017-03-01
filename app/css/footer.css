@@ -1,6 +1,4 @@
-/* ==== MERITS ====*/
-merits {
-  padding: 20px;
+footer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9,22 +7,64 @@ merits {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url(/img/map.png); }
+
+footer_box {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+    justify-content-flex-direction: column;
+    justify-content-flex-wrap: wrap;
+    justify-content-align-items: center;
   background-color: #232324; }
 
-merits_top {
-  padding: 40px;
+footer_box_copy {
+  width: 62%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+footer_box_copy_item_text {
+  color: white; }
+
+footer_box_copy_item_accent {
+  color: #eb4f4e; }
+
+footer_info {
+  margin: 40px;
+  padding-left: 15%;
+  padding-right: 15%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -33,82 +73,28 @@ merits_top {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background: #232324;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  color: white; }
 
-merits_top_title {
+footer_info_title {
   padding: 20px;
-  font-size: 40pt;
-  font-weight: bold;
-  letter-spacing: 5px;
-  color: white; }
+  font-size: 30pt; }
 
-merits_top_subtitle {
-  font-size: 20pt;
-  color: #d94948; }
-
-merits_box {
-  width: 75%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-merits_box_item {
-  width: 25%;
-  padding-left: 40px;
-  padding-right: 40px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-merits_box_item_title {
-  padding-top: 10px;
-  font-size: 30pt;
-  color: white; }
-
-merits_box_item_subtitle {
-  font-size: 18pt;
-  color: #d94948; }
+footer_info_text {
+  padding: 20px;
+  padding-top: 0px;
+  color: #eb4f4e; }

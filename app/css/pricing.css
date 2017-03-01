@@ -113,7 +113,6 @@ pricing_box_item_header {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -141,7 +140,6 @@ pricing_box_item_accent_header {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -197,7 +195,6 @@ pricing_box_item_options {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
   background-color: #ececec; }
@@ -223,7 +220,6 @@ pricing_box_item_accent_options {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
   background-color: #ececec; }
@@ -267,7 +263,6 @@ pricing_box_item_order {
   -webkit-flex: nowrap;
       -ms-flex: nowrap;
           flex: nowrap;
-  text-align: center;
   background-color: #eb4f4e;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
@@ -302,7 +297,6 @@ pricing_box_item_accent_order {
   -webkit-flex: nowrap;
       -ms-flex: nowrap;
           flex: nowrap;
-  text-align: center;
   background-color: #eb4f4e;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
