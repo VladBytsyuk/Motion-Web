@@ -109,7 +109,10 @@ team_box_item {
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
       -ms-flex-positive: 2;
-          flex-grow: 2; }
+          flex-grow: 2;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
 
 team_box_item_name {
   font-size: 25pt;

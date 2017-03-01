@@ -381,7 +381,10 @@ team_box_item {
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
       -ms-flex-positive: 2;
-          flex-grow: 2; }
+          flex-grow: 2;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
 
 team_box_item_name {
   font-size: 25pt;
@@ -617,6 +620,7 @@ portfolio_pages_item_highlighted {
   font-size: 0px;
   background-color: #61af66; }
 
+/* ==== PRICING ==== */
 pricing {
   padding: 20px;
   padding-bottom: 320px;
@@ -980,6 +984,7 @@ pricing_info {
   padding: 40px;
   color: #eb4f4e; }
 
+/* ==== TWEETS ==== */
 tweets {
   margin-top: -250px;
   display: -webkit-box;
@@ -1045,6 +1050,7 @@ tweets_hearth_tweet {
 tweets_hearth_tweet_core {
   color: white; }
 
+/* ==== FOOTER ==== */
 footer {
   display: -webkit-box;
   display: -webkit-flex;
