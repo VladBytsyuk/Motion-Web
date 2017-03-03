@@ -116,6 +116,9 @@
           flex-grow: 1;
   background-color: #f56262; }
 
+.corner_image {
+  width: 10%; }
+
 /* SLIDER */
 .slider {
   padding: 40px;
