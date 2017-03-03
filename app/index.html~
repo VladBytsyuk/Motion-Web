@@ -3,210 +3,250 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Motion</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <!-- ========= HEADER ========= -->
-    <header>
-      <header_navbar>
-        <header_navbar_top>
-          <header_navbar_top_logo>
-            <header_navbar_top_logo_title>
-              <img src="/img/logo.png" style="width: 66px">
-              <header_navbar_top_logo_title_text>Motion</header_top_logo_title_text>
-            </header_navbar_top_logo_title>
-            <header_navbar_top_logo_subtitle>Asingle Page Template</header_top_logo_subtitle>
-          </header_navbar_top_logo>
-          <header_navbar_top_menu>
-            <header_navbar_top_menu_item_highlighted>Home</header_navbar_top_menu_item_highlighted>
-            <header_navbar_top_menu_item>About</header_navbar_top_menu_item>
-            <header_navbar_top_menu_item>Team</header_navbar_top_menu_item>
-            <header_navbar_top_menu_item>Portfolio</header_navbar_top_menu_item>
-            <header_navbar_top_menu_item>Other</header_navbar_top_menu_item>
-            <header_navbar_top_menu_item>Contact</header_navbar_top_menu_item>
-	      </header_navbar_top_menu>
-	    </header_navbar_top>
-		<header_navbar_corner>
-		  <img src="/img/corner.png"></imgr>
-		</header_navbar_corner>
-	  </header_navbar>
-      <header_slider>
-	    <header_slider_title>Welcome to Motion</header_slider_title>
-	    <header_slider_subtitle>Asmart & Creative Single Page Template</header_slider_subtitle>
-	    <img src="/img/slider.png"></header_slider>
-	   </header_slider>
-	 </header>
-	 <!-- ========= MERITS ========= -->
-    <merits>
-      <merits_top>
-	    <merits_top_title>Smart & Creative</merits_top_title>
-	    <merits_top_subtitle>This is why you will use it :)</merits_top_subtitle>
-	  </merits_top>
-   	<merits_box>
-   	  <merits_box_item>
-   		<img src="/img/multi.png">
-   	    <merits_box_item_title>Multi purpose</merits_box_item_title>
-   		<merits_box_item_subtitle>Lorem ipsum dolor sit amet, consectetur adipisicing..</merits_box_item_subtitle>
-   	  </merits_box_item>
-   	  <merits_box_item>
-   	    <img src="/img/flat.png">
-   	    <merits_box_item_title>Flat UI</merits_box_item_title>
-   	    <merits_box_item_subtitle>Lorem ipsum dolor sit amet, consectetur adipisicing..</merits_box_item_subtitle>
-   	  </merits_box_item>
-   	  <merits_box_item>
-   		<img src="/img/creative.png">
-   		<merits_box_item_title>Creative design</merits_box_item_title>
-   		<merits_box_item_subtitle>Lorem ipsum dolor sit amet, consectetur adipisicing..</merits_box_item_subtitle>
-   	  </merits_box_item>
-   	</merits_box>	
-    </merits>
+    <div class="header">
+      <div class="navbar">
+        <div class="navbar_top">
+          <div class="logo">
+            <div class="logo_title">
+              <img src="/img/logo.png" style="width: 66px; margin-bottom: 10px; margin-right: 10px">
+              Motion
+            </div>
+            <div class="logo_subtitle">Asingle Page Template</div>
+          </div>
+          <div class="navbar_menu">
+            <div class="navbar_menu_item_highlighted">Home</div>
+            <div class="navbar_menu_item">About</div>
+            <div class="navbar_menu_item">Team</div>
+            <div class="navbar_menu_item">Portfolio</div>
+            <div class="navbar_menu_item">Other</div>
+            <div class="navbar_menu_item">Contact</div>
+          </div>
+        </div>
+        <div class="corner">
+          <img src="/img/corner.png"></imgr>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider_title">Welcome to Motion</div>
+	<div class="slider_subtitle">Asmart & Creative Single Page Template</div>
+	<img src="/img/slider.png">
+      </div>
+    </div>
+    <!-- ========= MERITS ========= -->
+    <div class="merits">
+      <div class="merits_top">
+        <div class="merits_top_title">Smart & Creative</div>
+        <div class="merits_top_subtitle">This is why you will use it :)</div>
+      </div>
+      <div class="merits_box">
+        <div class="merits_box_item">
+          <img src="/img/multi.png">
+          <div class="merits_box_item_title">Multi purpose</div>
+          <div class="merits_box_item_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing..</div>
+        </div>
+     	<div class="merits_box_item">
+     	  <img src="/img/flat.png">
+     	  <div class="merits_box_item_title">Flat UI</div>
+     	  <div class="merits_box_item_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing..</div>
+     	</div>
+     	<div class="merits_box_item">
+          <img src="/img/creative.png">
+          <div class="merits_box_item_title">Creative design</div>
+          <div class="merits_box_item_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing..</div>
+     	</div>
+      </div>	
+    </div>
     <!-- ========= TEAM ========= -->
-    <team>
-      <team_top>
-   	  <team_top_title>Talented & Experts</team_top_title>
-   	  <team_top_subtitle>This is our team :)</team_top_subtitle>
-   	</team_top>
-   	<team_box>
-   	  <team_box_item>
-   		<img src="/img/mahmoud.png">
-   		<team_box_item_name>Mahmoud Baghagho</team_box_item_name>
-   		<team_box_item_position>Senior UI Designer</team_box_item_position>
-   		<team_box_item_button>
-   		  <img src="/img/tweet.png">
-   		  <team_box_item_button_text>Follow</team_box_item_button_text>
-   		</team_box_item_button>
-   	  </team_box_item>
-   	  <team_box_item>
-   		<img src="/img/abd.png">
-   		<team_box_item_name>Abd ElRahman</team_box_item_name>
-   		<team_box_item_position>Senior App Developer</team_box_item_position>
-   		<team_box_item_button>
-   		  <img src="/img/tweet.png">
-   		  <team_box_item_button_text>Follow</team_box_item_button_text>
-   		</team_box_item_button>
-   	  </team_box_item>
-   	  <team_box_item>
-   		<img src="/img/mostafa.png">
-   		<team_box_item_photo></team_box_item_photo>
-   		<team_box_item_name>Mostafa Amin</team_box_item_name>
-   		<team_box_item_position>Senior Graphic Designer</team_box_item_position>
-   		<team_box_item_button>
-   		  <img src="/img/tweet.png">
-   		  <team_box_item_button_text>Follow</team_box_item_button_text>
-   		</team_box_item_button>
-   	  </team_box_item>
-   	  <team_box_item>
-   		<img src="/img/ahmed.png">
-   		<team_box_item_name>Ahmed Ali</team_box_item_name>
-   		<team_box_item_position>Senior Web Developer</team_box_item_position>
-   		<team_box_item_button>
-   		  <img src="/img/tweet.png">
-   		  <team_box_item_button_text>Follow</team_box_item_button_text>
-   	    </team_box_item_button>
-   	  </team_box_item>
-   	</team_box>
-    </team>
+    <div class="team">
+      <div class="team_top">
+        <div class="team_top_title">Talented & Experts</div>
+        <div class="team_top_subtitle">This is our team :)</div>
+      </div>
+      <div class="team_box">
+        <div class="team_box_item">
+          <img src="/img/mahmoud.png">
+       	  <div class="team_name">Mahmoud Baghagho</div>
+          <div class="team_position">Senior UI Designer</div>
+          <div class="team_button">
+            <img src="/img/tweet.png">
+            <div class="team_button_text">Follow</div>
+          </div>
+        </div>
+      <div class="team_box_item">
+        <img src="/img/abd.png">
+       		<div class="team_name">Abd ElRahman</div>
+       		<div class="team_position">Senior App Developer</div>
+       		<div class="team_button">
+       		  <img src="/img/tweet.png">
+       		  <div class="team_button_text">Follow</div>
+       		</div>
+     	  </div>
+     	  <div class="team_box_item">
+       		<img src="/img/mostafa.png">
+       		<div class="team_name">Mostafa Amin</div>
+       		<div class="team_position">Senior Graphic Designer</div>
+       		<div class="team_button">
+       		  <img src="/img/tweet.png">
+       		  <div class="team_button_text">Follow</div>
+       		</div>
+     	  </div>
+     	  <div class="team_box_item">
+     		  <img src="/img/ahmed.png">
+       		<div class="team_name">Ahmed Ali</div>
+       		<div class="team_position">Senior Web Developer</div>
+       		<div class="team_button">
+       		  <img src="/img/tweet.png">
+       		  <div class="team_button_text">Follow</div>
+       	  </div>
+     	  </div>
+     	</div>
+    </div>
     <!-- ========= PORTFOLIO ========= -->
-    <portfolio>
-      <portfolio_top>
-    	<portfolio_top_title>Elegant & Genuine</portfolio_top_title>
-   		<portfolio_top_subtitle>This is how our works looks like :)</portfolio_top_subtitle>
-   	  </portfolio_top>
-      <portfolio_slider>
-	    <img src="/img/arrow-left.png">
-   	    <portfolio_slider_box>
-          <portfolio_slider_box_item>
+    <div class="portfolio">
+      <div class="portfolio_top">
+    	  <div class="portfolio_top_title">Elegant & Genuine</div>
+   		  <div class="portfolio_top_subtitle">This is how our works looks like :)</div>
+   	  </div>
+      <div class="portfolio_slider">
+	      <img src="/img/arrow-left.png">
+   	    <div class="portfolio_box">
+          <div class="portfolio_item">
             <img src="/img/sms-clouds.png" style=" border-radius: 8px ">
-   		    <portfolio_slider_box_item_name>SMS Clouds</portfolio_box_item_name>
-   	    </portfolio_slider_box_item>
-        <portfolio_slider_box_item>
-          <img src="/img/blue-apple.png" style=" border-radius: 8px ">
-   	      <portfolio_slider_box_item_name>Blue Apple Soft</portfolio_box_item_name>
-        </portfolio_slider_box_item>
-        <portfolio_slider_box_item>
-   	      <img src="/img/together-app.png" style=" border-radius: 8px ">
-          <portfolio_slider_box_item_name>Together Application</portfolio_box_item_name>
-        </portfolio_slider_box_item>
-   	    <portfolio_slider_box_item>
-   	      <img src="/img/fc-barcelona.png" style=" border-radius: 8px ">
-   		  <portfolio_slider_box_item_name>FCBarcelona Club</portfolio_box_item_name>
-        </portfolio_slider_box_item>
-   	  </portfolio_slider_box>
-	  <img src="/img/arrow-right.png">
-	</portfolio_slider>
-	<portfolio_pages>
-	  <portfolio_pages_item>s</portfolio_pages_item>
-	  <portfolio_pages_item>s</portfolio_pages_item>
-	  <portfolio_pages_item>s</portfolio_pages_item>
-	  <portfolio_pages_item_highlighted>s</portfolio_pages_item_highlighted>
-	</portfolio_pages>
-    </portfolio> 
+   		      <div class="portfolio_name">SMS Clouds</div>
+   	      </div>
+          <div class="portfolio_item">
+            <img src="/img/blue-apple.png" style=" border-radius: 8px ">
+   	        <div class="portfolio_name">Blue Apple Soft</div>
+          </div>
+          <div class="portfolio_item">
+   	        <img src="/img/together-app.png" style=" border-radius: 8px ">
+            <div class="portfolio_name">Together Application</div>
+          </div>
+   	      <div class="portfolio_item">
+   	        <img src="/img/fc-barcelona.png" style=" border-radius: 8px ">
+   		      <div class="portfolio_name">FCBarcelona Club</div>
+          </div>
+   	    </div>
+	      <img src="/img/arrow-right.png">
+	    </div>
+    	<div class="portfolio_pages">
+    	  <div class="portfolio_pages_item">s</div>
+    	  <div class="portfolio_pages_item">s</div>
+    	  <div class="portfolio_pages_item">s</div>
+    	  <div class="portfolio_pages_item_highlighted">s</div>
+    	</div>
+    </div> 
     <!-- ========= PRICING ========= -->
-    <pricing>
-      <pricing_box>
-        <pricing_box_item>
-          <pricing_box_item_header>
-            <pricing_box_item_header_title>Start Up</pricing_box_item_header_title>
-            <pricing_box_item_header_subtitle>For beginners</pricing_box_item_header_subtitle>
-          </pricing_box_item_header>
-          <pricing_box_item_options>
-            <pricing_box_item_options_option>Basic pages</pricing_box_item_options_option>
-            <pricing_box_item_options_option>MySQL Databases</pricing_box_item_options_option>
-            <pricing_box_item_options_option>Bandwidth</pricing_box_item_options_option>
-            <pricing_box_item_options_option>Storage space</pricing_box_item_options_option>
-          </pricing_box_item_options>
-          <pricing_box_item_order>
-            <pricing_box_item_order_price>
-              <pricing_box_item_order_price_dol>$</pricing_box_item_order_price_dol>
-              <pricing_box_item_order_price_value>15</pricing_box_item_order_price_value>
-              <pricing_box_item_order_price_periodicity>/mo</pricing_box_item_order_price_periodicity>
-            </pricing_box_item_order_price>
-            <pricing_box_item_order_button>Order</pricing_box_item_order_button>
-          </pricing_box_item_order>
-        </pricing_box_item>
-        <pricing_box_item_accent>
-          <pricing_box_item_accent_header>
-            <pricing_box_item_accent_header_title>Standart</pricing_box_item_accent_header_title>
-            <pricing_box_item_accent_header_subtitle>More than what you have dreamed with</pricing_box_item_accent_header_subtitle>
-          </pricing_box_item_accent_header>
-          <pricing_box_item_accent_options>
-            <pricing_box_item_accent_options_option>Standart pages</pricing_box_item_accent_options_option>
-            <pricing_box_item_accent_options_option>MySQL Databases</pricing_box_item_accent_options_option>
-            <pricing_box_item_accent_options_option>Bandwidth</pricing_box_item_accent_options_option>
-            <pricing_box_item_accent_options_option>Storage space</pricing_box_item_accent_options_option>
-          </pricing_box_item_accent_options>
-          <pricing_box_item_accent_order>
-            <pricing_box_item_accent_order_price>
-              <pricing_box_item_accent_order_price_dol>$</pricing_box_item_accent_order_price_dol>
-              <pricing_box_item_accent_order_price_value>15</pricing_box_item_accent_order_price_value>
-              <pricing_box_item_accent_order_price_periodicity>/mo</pricing_box_item_accent_order_price_periodicity>
-            </pricing_box_item_accent_order_price>
-            <pricing_box_item_accent_order_button>Order</pricing_box_item_accent_order_button>
-          </pricing_box_item_accent_order>
-        </pricing_box_item_accent>
-        <pricing_box_item>
-          <pricing_box_item_header>
-            <pricing_box_item_header_title>Professional</pricing_box_item_header_title>
-            <pricing_box_item_header_subtitle>For smart people</pricing_box_item_header_subtitle>
-          </pricing_box_item_header>
-          <pricing_box_item_options>
-            <pricing_box_item_options_option>Basic pages</pricing_box_item_options_option>
-            <pricing_box_item_options_option>MySQL Databases</pricing_box_item_options_option>
-            <pricing_box_item_options_option>Bandwidth</pricing_box_item_options_option>
-            <pricing_box_item_options_option>Storage space</pricing_box_item_options_option>
-          </pricing_box_item_options>
-          <pricing_box_item_order>
-            <pricing_box_item_order_price>
-              <pricing_box_item_order_price_dol>$</pricing_box_item_order_price_dol>
-              <pricing_box_item_order_price_value>35</pricing_box_item_order_price_value>
-              <pricing_box_item_order_price_periodicity>/mo</pricing_box_item_order_price_periodicity>
-            </pricing_box_item_order_price>
-            <pricing_box_item_order_button>Order</pricing_box_item_order_button>
-          </pricing_box_item_order>
-        </pricing_box_item>
-      </pricing_box>
-      <pricing_info>And more available plans for all needs .... Check here</pricing_info>
-    </pricing>
+    <div class="pricing">
+      <div class="pricing_box">
+        <div class="pricing_item">
+          <div class="pricing_header">
+            <div class="pricing_title">Start Up</div>
+            <div class="pricing_subtitle">For beginners</div>
+          </div>
+          <div class="pricing_options">
+            <div class="pricing_option">Basic pages</div>
+            <div class="pricing_option">MySQL Databases</div>
+            <div class="pricing_option">Bandwidth</div>
+            <div class="pricing_option">Storage space</div>
+          </div>
+          <div class="pricing_order">
+            <div class="pricing_price">
+              <div class="pricing_dollar">$</div>
+              <div class="pricing_value">15</div>
+              <div class="pricing_periodicity">/mo</div>
+            </div>
+            <div class="pricing_button">Order</div>
+          </div>
+        </div>
+        <div class="pricing_item_accent">
+          <div class="pricing_header">
+            <div class="pricing_title_accent">Standart</div>
+            <div class="pricing_subtitle_accent">More than what you have dreamed with</div>
+          </div>
+          <img src="/img/settings.png" style="margin-top: -17px; z-index: 500">
+          <div class="pricing_options" style="margin-top: -16px">
+            <div class="pricing_option">Standart pages</div>
+            <div class="pricing_option">MySQL Databases</div>
+            <div class="pricing_option">Bandwidth</div>
+            <div class="pricing_option">Storage space</div>
+          </div>
+          <div class="pricing_order">
+            <div class="pricing_price">
+              <div class="pricing_dollar">$</div>
+              <div class="pricing_value">25</div>
+              <div class="pricing_periodicity">/mo</div>
+            </div>
+            <div class="pricing_button_accent">Order</div>
+          </div>
+        </div>
+        <div class="pricing_item">
+          <div class="pricing_header">
+            <div class="pricing_title">Professional</div>
+            <div class="pricing_subtitle">For smart people</div>
+          </div>
+          <div class="pricing_options">
+            <div class="pricing_option">Basic pages</div>
+            <div class="pricing_option">MySQL Databases</div>
+            <div class="pricing_option">Bandwidth</div>
+            <div class="pricing_option">Storage space</div>
+          </div>
+          <div class="pricing_order">
+            <div class="pricing_price">
+              <div class="pricing_dollar">$</div>
+              <div class="pricing_value">35</div>
+              <div class="pricing_periodicity">/mo</div>
+            </div>
+            <div class="pricing_button">Order</div>
+          </div>
+        </div>
+      </div>
+      <div class="pricing_info">And more available plans for all needs .... Check here</div>
+    </div>
+    <!-- ========= TWEETS ========= -->
+    <div class="tweets">
+      <img src="/img/arrow-left-b.png">
+      <div class="tweets_hearth">
+        <div class="tweets_title">Latest tweets</div>
+        <div class="tweets_subtitle">This is how to keep in touch :)</div>
+        <img src="/img/tweet.png">
+        <div class="tweets_hearth_tweet">
+          @Abd-Alrahaman Elgazzar 
+          <span style="color:white">Great work Abd-Alrahaman, I really love the application ... hope you haveall the luck in ur life .. also have alook here</span> 
+          http://t.co/zfdgfdg
+        </div>s
+      </div>
+      <img src="/img/arrow-right-b.png">
+    </div>
+    <!-- ========= FOOTER ========= -->
+    <div class="footer">
+      <div class="footer_box">
+        <div class="footer_copy">
+          <div class="footer_item">
+            <div class="footer_text">
+              &#169;2013
+              <span style="color: #eb4f4e">Motion Template</span>.
+              Design by Begha
+            </div>
+          </div>
+          <div class="footer_item">
+            <img src="/img/facebook.png">
+            <img src="/img/tweet-ic.png">
+            <img src="/img/rss.png">
+          </div>
+        </div>
+      </div>  
+      <div class="footer_info">
+        <div class="footer_title">Contact Us</div>
+        <div class="footer_info_text">7oroof@7oroof.com</div>
+        <div class="footer_info_text">Your adress goes here</div>
+      </div>
+    </div>
   </body>
 </html>
