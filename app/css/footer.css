@@ -37,7 +37,7 @@
     justify-content-align-items: center;
   background-color: #232324; }
 
-.footer_box_copy {
+.footer_copy {
   width: 62%;
   padding: 10px;
   display: -webkit-box;
@@ -56,7 +56,7 @@
       -ms-flex-align: center;
           align-items: center; }
 
-.footer_box_copy_item {
+.footer_item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,11 +67,8 @@
       -ms-flex: wrap;
           flex: wrap; }
 
-.footer_box_copy_item_text {
+.footer_text {
   color: white; }
-
-.footer_box_copy_item_accent {
-  color: #eb4f4e; }
 
 .footer_info {
   margin: 40px;
@@ -102,7 +99,7 @@
           border-radius: 4px;
   color: white; }
 
-.footer_info_title {
+.footer_title {
   padding: 20px;
   font-size: 30pt; }
 

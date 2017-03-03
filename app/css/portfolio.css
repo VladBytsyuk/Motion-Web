@@ -82,7 +82,7 @@
       -ms-flex-align: center;
           align-items: center; }
 
-.portfolio_slider_box {
+.portfolio_box {
   width: 70%;
   padding-left: 72px;
   padding-right: 72px;
@@ -106,7 +106,7 @@
       -ms-flex-align: center;
           align-items: center; }
 
-.portfolio_slider_box_item {
+.portfolio_item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -134,7 +134,7 @@
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-.portfolio_slider_box_item_name {
+.portfolio_name {
   padding-top: 16px;
   font-size: 21pt;
   white-space: nowrap;
