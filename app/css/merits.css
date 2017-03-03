@@ -1,5 +1,6 @@
 /* ==== MERITS ====*/
 .merits {
+  margin-top: -150px;
   padding: 20px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -22,6 +23,18 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #232324; }
+
+@media (max-width: 1440px) {
+  .merits {
+    margin-top: -100px; } }
+
+@media (max-width: 1080px) {
+  .merits {
+    margin-top: -75px; } }
+
+@media (max-width: 760px) {
+  .merits {
+    margin-top: -50px; } }
 
 .merits_top {
   padding: 40px;
