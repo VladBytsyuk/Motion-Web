@@ -8,7 +8,7 @@
 
 body {
   margin: 0 auto;
-  min-width: 210px;
+  min-width: 60px;
   font-family: 'bariol';
   text-align: center;
   background-color: white; }
@@ -19,7 +19,6 @@ body {
 
 .navbar {
   width: 100%;
-  min-width: 60px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -32,8 +31,10 @@ body {
           flex-wrap: nowrap;
   background-color: #eb4f4e; }
 
+.navbar_items {
+  width: 100%; }
+
 .navbar_top {
-  min-width: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
   display: -webkit-box;
@@ -125,14 +126,14 @@ body {
 /* CORNER */
 .corner {
   float: right;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   background-color: #f56262; }
 
 .corner_image {
-  width: 10%; }
+  width: 100%; }
+
+@media (max-width: 460px) {
+  .corner {
+    display: none; } }
 
 /* SLIDER */
 .slider {
@@ -164,16 +165,24 @@ body {
   font-size: 60pt;
   letter-spacing: 10px; }
 
-@media (max-width: 420px) {
-  .slider_title {
-    font-size: 40pt; } }
-
 .slider_subtitle {
   padding: 40px;
   font-size: 20pt; }
 
 .slider_image {
   width: 75%; }
+
+@media (max-width: 420px) {
+  .logo_title {
+    font-size: 20pt; }
+  .logo_subtitle {
+    font-size: 14pt; }
+  .navbar_menu {
+    font-size: 12pt; }
+  .slider_title {
+    font-size: 40pt; }
+  .slider_subtitle {
+    font-size: 15pt; } }
 
 /* ==== MERITS ====*/
 .merits {
@@ -303,6 +312,16 @@ body {
   font-size: 18pt;
   color: #d94948; }
 
+@media (max-width: 420px) {
+  .merits_top_title {
+    font-size: 25pt; }
+  .merits_top_subtitle {
+    font-size: 16pt; }
+  .merits_box_item_title {
+    font-size: 20pt; }
+  .merits_box_item_subtitle {
+    font-size: 14pt; } }
+
 /* ==== TEAM ==== */
 .team {
   padding: 20px;
@@ -420,7 +439,7 @@ body {
           flex-shrink: 0; }
 
 .team_name {
-  font-size: 25pt;
+  font-size: 20pt;
   padding-top: 16px;
   white-space: nowrap;
   color: #61af66; }
@@ -431,14 +450,6 @@ body {
   font-size: 18pt;
   white-space: nowrap;
   color: #e74c3c; }
-
-@media (max-width: 1079px) {
-  .team_name {
-    word-wrap: break-word;
-    white-space: normal; }
-  .team_position {
-    word-wrap: break-word;
-    white-space: normal; } }
 
 .team_button {
   width: 90%;
@@ -471,6 +482,24 @@ body {
 
 .team_button_text {
   padding-left: 16px; }
+
+@media (max-width: 1079px) {
+  .team_button {
+    font-size: 18pt; }
+  .team_name {
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 18pt; }
+  .team_position {
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 14pt; } }
+
+@media (max-width: 420px) {
+  .team_top_title {
+    font-size: 25pt; }
+  .team_top_subtitle {
+    font-size: 16pt; } }
 
 /* ==== PORTFOLIO ==== */
 .portfolio {
@@ -648,6 +677,14 @@ body {
   font-size: 0px;
   background-color: #61af66; }
 
+@media (max-width: 420px) {
+  .portfolio_top_title {
+    font-size: 25pt; }
+  .portfolio_top_subtitle {
+    font-size: 16pt; }
+  .portfolio_name {
+    font-size: 15pt; } }
+
 /* ==== PRICING ==== */
 .pricing {
   padding: 20px;
@@ -798,6 +835,16 @@ body {
   font-size: 20pt;
   color: #616161; }
 
+@media (max-width: 420px) {
+  .pricing_title {
+    font-size: 20pt; }
+  .pricing_title_accent {
+    font-size: 20pt; }
+  .pricing_subtitle {
+    font-size: 16pt; }
+  .pricing_subtitle_accent {
+    font-size: 16pt; } }
+
 .pricing_options {
   width: 100%;
   display: -webkit-box;
@@ -904,10 +951,22 @@ body {
           border-radius: 4px;
   background-color: white; }
 
+@media (max-width: 420px) {
+  .pricing_dollar {
+    font-size: 16pt; }
+  .pricing_value {
+    font-size: 20pt; }
+  .pricing_periodicity {
+    font-size: 12pt; } }
+
 .pricing_info {
   font-size: 20pt;
   padding: 40px;
   color: #eb4f4e; }
+
+@media (max-width: 420px) {
+  .pricing_info {
+    font-size: 16pt; } }
 
 /* ==== TWEETS ==== */
 .tweets {
@@ -973,6 +1032,14 @@ body {
   font-family: 'bariol-italic';
   text-align: start;
   color: black; }
+
+@media (max-width: 420px) {
+  .tweets_title {
+    font-size: 20pt; }
+  .tweets_subtitle {
+    font-size: 16pt; }
+  .tweets_hearth_tweet {
+    font-size: 14pt; } }
 
 /* ==== FOOTER ==== */
 .footer {
@@ -1083,3 +1150,11 @@ body {
   padding: 20px;
   padding-top: 0px;
   color: #eb4f4e; }
+
+@media (max-width: 420px) {
+  .footer_title {
+    font-size: 18pt; }
+  .footer_text {
+    font-size: 10pt; }
+  .footer_info_text {
+    font-size: 10pt; } }

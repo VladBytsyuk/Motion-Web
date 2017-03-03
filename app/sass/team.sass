@@ -55,7 +55,7 @@ $text_orange: #e74c3c
 	flex-shrink: 0
 
 .team_name
-	font-size: 25pt
+	font-size: 20pt
 	padding-top: 16px
 	white-space: nowrap
 	color: $text_green
@@ -66,14 +66,6 @@ $text_orange: #e74c3c
 	font-size: 18pt
 	white-space: nowrap
 	color: $text_orange
-
-@media(max-width: 1079px) 
-	.team_name
-		word-wrap: break-word
-		white-space: normal
-	.team_position
-		word-wrap: break-word
-		white-space: normal
 
 .team_button
 	width: 90%
@@ -90,3 +82,21 @@ $text_orange: #e74c3c
 
 .team_button_text
 	padding-left: 16px
+
+@media(max-width: 1079px) 
+	.team_button
+        font-size: 18pt
+	.team_name
+		word-wrap: break-word
+		white-space: normal
+		font-size: 18pt
+	.team_position
+		word-wrap: break-word
+		white-space: normal
+		font-size: 14pt
+
+@media(max-width: 420px)
+    .team_top_title
+        font-size: 25pt
+    .team_top_subtitle
+	    font-size: 16pt

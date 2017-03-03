@@ -107,3 +107,11 @@
   padding: 20px;
   padding-top: 0px;
   color: #eb4f4e; }
+
+@media (max-width: 420px) {
+  .footer_title {
+    font-size: 18pt; }
+  .footer_text {
+    font-size: 10pt; }
+  .footer_info_text {
+    font-size: 10pt; } }

@@ -148,6 +148,16 @@
   font-size: 20pt;
   color: #616161; }
 
+@media (max-width: 420px) {
+  .pricing_title {
+    font-size: 20pt; }
+  .pricing_title_accent {
+    font-size: 20pt; }
+  .pricing_subtitle {
+    font-size: 16pt; }
+  .pricing_subtitle_accent {
+    font-size: 16pt; } }
+
 .pricing_options {
   width: 100%;
   display: -webkit-box;
@@ -254,7 +264,19 @@
           border-radius: 4px;
   background-color: white; }
 
+@media (max-width: 420px) {
+  .pricing_dollar {
+    font-size: 16pt; }
+  .pricing_value {
+    font-size: 20pt; }
+  .pricing_periodicity {
+    font-size: 12pt; } }
+
 .pricing_info {
   font-size: 20pt;
   padding: 40px;
   color: #eb4f4e; }
+
+@media (max-width: 420px) {
+  .pricing_info {
+    font-size: 16pt; } }

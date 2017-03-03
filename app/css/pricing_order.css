@@ -71,3 +71,11 @@
   -webkit-border-radius: 4px;
           border-radius: 4px;
   background-color: white; }
+
+@media (max-width: 420px) {
+  .pricing_dollar {
+    font-size: 16pt; }
+  .pricing_value {
+    font-size: 20pt; }
+  .pricing_periodicity {
+    font-size: 12pt; } }
