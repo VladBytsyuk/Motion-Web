@@ -16,7 +16,7 @@ body {
 .header {
   color: white; }
 
-.header_navbar {
+.navbar {
   width: 100%;
   min-width: 60px;
   display: -webkit-box;
@@ -31,7 +31,7 @@ body {
           flex-wrap: nowrap;
   background-color: #eb4f4e; }
 
-.header_navbar_top {
+.navbar_top {
   min-width: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -52,7 +52,7 @@ body {
   background-color: #f56262; }
 
 /* LOGO */
-.header_navbar_top_logo {
+.logo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -69,23 +69,27 @@ body {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.header_navbar_top_logo_title {
+.logo_title {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   justify-conytent: space-around;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-flex: wrap;
   -webkit-flex: wrap;
       -ms-flex: wrap;
           flex: wrap;
   font-size: 35pt; }
 
-.header_navbar_top_logo_subtitle {
+.logo_subtitle {
   font-size: 17pt; }
 
 /* MENU */
-.header_navbar_top_menu {
+.navbar_menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -104,7 +108,7 @@ body {
   font-size: 16pt;
   font-weight: bold; }
 
-.header_navbar_top_menu_item_highlighted {
+.navbar_menu_item_highlighted {
   padding-top: 5px;
   padding-right: 15px;
   padding-bottom: 5px;
@@ -114,11 +118,11 @@ body {
           border-radius: 4px;
   background-color: black; }
 
-.header_navbar_top_menu_item {
+.navbar_menu_item {
   padding-right: 40px; }
 
 /* CORNER */
-.header_navbar_corner {
+.corner {
   float: right;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -127,7 +131,7 @@ body {
   background-color: #f56262; }
 
 /* SLIDER */
-.header_slider {
+.slider {
   padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -152,15 +156,15 @@ body {
   font-weight: bold;
   background-color: #eb4f4e; }
 
-.header_slider_title {
+.slider_title {
   font-size: 60pt;
   letter-spacing: 10px; }
 
 @media (max-width: 420px) {
-  .header_slider_title {
+  .slider_title {
     font-size: 40pt; } }
 
-.header_slider_subtitle {
+.slider_subtitle {
   padding: 40px;
   font-size: 20pt; }
 
