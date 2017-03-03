@@ -2,10 +2,10 @@ $background: #eb4f4e
 $top_background: #f56262
 
 /* ==== HEADER ==== */
-header
+.header
 	color: white
 
-header_navbar
+.header_navbar
 	width: 100%
 	min-width: 60px
 	display: flex
@@ -13,7 +13,7 @@ header_navbar
 	flex-wrap: nowrap
 	background-color: $background
 
-header_navbar_top
+.header_navbar_top
 	min-width: 60px
 	padding-top: 20px
 	padding-bottom: 20px
@@ -26,23 +26,23 @@ header_navbar_top
 
 /* LOGO */
 
-header_navbar_top_logo
+.header_navbar_top_logo
 	display: flex
 	justify-content: space-around
 	flex-wrap: wrap
 	flex-direction: column
 
-header_navbar_top_logo_title
+.header_navbar_top_logo_title
 	font-size: 35pt
 
-header_navbar_top_logo_subtitle
+.header_navbar_top_logo_subtitle
 	font-size: 17pt
 
 
 
 /* MENU */
 
-header_navbar_top_menu
+.header_navbar_top_menu
 	display: flex
 	flex-wrap: wrap
 	align-items: center
@@ -52,7 +52,7 @@ header_navbar_top_menu
 	font-size: 16pt
 	font-weight: bold
 
-header_navbar_top_menu_item_highlighted
+.header_navbar_top_menu_item_highlighted
 	padding-top: 5px
 	padding-right: 15px
 	padding-bottom: 5px
@@ -61,14 +61,14 @@ header_navbar_top_menu_item_highlighted
 	border-radius: 4px
 	background-color: black
 
-header_navbar_top_menu_item
+.header_navbar_top_menu_item
 	padding-right: 40px
 
 
 
 /* CORNER */
 
-header_navbar_corner
+.header_navbar_corner
 	float: right
 	flex-grow: 1
 	background-color: $top_background
@@ -76,7 +76,7 @@ header_navbar_corner
 
 /* SLIDER */
 
-header_slider
+.header_slider
 	padding: 40px
 	display: flex
 	justify-content: center
@@ -86,14 +86,14 @@ header_slider
 	font-weight: bold
 	background-color: $background
 
-header_slider_title
+.header_slider_title
 	font-size: 60pt
 	letter-spacing: 10px
 
 @media(max-width: 420px)
-	header_slider_title
+	.header_slider_title
 		font-size: 40pt
 
-header_slider_subtitle
+.header_slider_subtitle
 	padding: 40px
 	font-size: 20pt

@@ -1,5 +1,5 @@
 /* ==== FOOTER ==== */
-footer {
+.footer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,7 +22,7 @@ footer {
           align-items: center;
   background-image: url(/img/map.png); }
 
-footer_box {
+.footer_box {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -37,7 +37,7 @@ footer_box {
     justify-content-align-items: center;
   background-color: #232324; }
 
-footer_box_copy {
+.footer_box_copy {
   width: 62%;
   padding: 10px;
   display: -webkit-box;
@@ -56,13 +56,24 @@ footer_box_copy {
       -ms-flex-align: center;
           align-items: center; }
 
-footer_box_copy_item_text {
+.footer_box_copy_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-contene: space-between;
+  -webkit-box-flex: wrap;
+  -webkit-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap; }
+
+.footer_box_copy_item_text {
   color: white; }
 
-footer_box_copy_item_accent {
+.footer_box_copy_item_accent {
   color: #eb4f4e; }
 
-footer_info {
+.footer_info {
   margin: 40px;
   padding-left: 15%;
   padding-right: 15%;
@@ -91,11 +102,11 @@ footer_info {
           border-radius: 4px;
   color: white; }
 
-footer_info_title {
+.footer_info_title {
   padding: 20px;
   font-size: 30pt; }
 
-footer_info_text {
+.footer_info_text {
   padding: 20px;
   padding-top: 0px;
   color: #eb4f4e; }

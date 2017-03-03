@@ -1,5 +1,5 @@
 /* ==== TWEETS ==== */
-tweets {
+.tweets {
   margin-top: -250px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,7 +18,7 @@ tweets {
           align-items: center;
   background-color: #eb4f4e; }
 
-tweets_hearth {
+.tweets_hearth {
   width: 65%;
   padding-top: 40px;
   padding-right: 60px;
@@ -45,21 +45,20 @@ tweets_hearth {
       -ms-flex-align: center;
           align-items: center; }
 
-tweets_hearth_title {
+.tweets_hearth_title {
   font-size: 40pt;
   letter-spacing: 10px;
   font-weight: bold;
   color: white; }
 
-tweets_hearth_subtitle {
+.tweets_hearth_subtitle {
   padding-bottom: 20px;
   font-size: 20pt;
   color: black; }
 
-tweets_hearth_tweet {
+.tweets_hearth_tweet {
   padding: 20px;
   font-size: 20pt;
-  font-family: 'bariol-italic'; }
-
-tweets_hearth_tweet_core {
-  color: white; }
+  font-family: 'bariol-italic';
+  text-align: start;
+  color: black; }

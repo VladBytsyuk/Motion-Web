@@ -1,4 +1,4 @@
-pricing_box_item_options {
+.pricing_box_item_options {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -23,7 +23,7 @@ pricing_box_item_options {
   border-right: 1px solid #ececec;
   background-color: #ececec; }
 
-pricing_box_item_accent_options {
+.pricing_box_item_accent_options {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -48,14 +48,14 @@ pricing_box_item_accent_options {
   border-right: 1px solid #ececec;
   background-color: #ececec; }
 
-pricing_box_item_options_option {
+.pricing_box_item_options_option {
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid black;
   color: #616161; }
 
-pricing_box_item_accent_options_option {
+.pricing_box_item_accent_options_option {
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;

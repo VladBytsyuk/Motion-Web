@@ -3,7 +3,7 @@ $text_red: #eb4f4e
 
 /* ==== FOOTER ==== */
 
-footer
+.footer
     display: flex
     justify-content: center
     flex-direction: column
@@ -11,7 +11,7 @@ footer
     align-items: center
     background-image: url(/img/map.png)
 
-footer_box
+.footer_box
 	width: 100%
 	display: flex
 	justify-content: center
@@ -20,7 +20,7 @@ footer_box
     align-items: center
 	background-color: $background
 
-footer_box_copy
+.footer_box_copy
 	width: 62%
 	padding: 10px
 	display: flex
@@ -28,13 +28,18 @@ footer_box_copy
 	flex-wrap: wrap
 	align-items: center
 
-footer_box_copy_item_text
+.footer_box_copy_item
+	display: flex
+	justify-contene: space-between
+	flex: wrap
+
+.footer_box_copy_item_text
 	color: white
 
-footer_box_copy_item_accent
+.footer_box_copy_item_accent
 	color: $text_red
 
-footer_info
+.footer_info
 	margin: 40px
 	padding-left: 15%
 	padding-right: 15%
@@ -47,11 +52,11 @@ footer_info
 	border-radius: 4px
 	color: white
 
-footer_info_title
+.footer_info_title
 	padding: 20px
 	font-size: 30pt
 
-footer_info_text
+.footer_info_text
 	padding: 20px
 	padding-top: 0px
 	color: $text_red

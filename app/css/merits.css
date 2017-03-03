@@ -1,5 +1,5 @@
 /* ==== MERITS ====*/
-merits {
+.merits {
   padding: 20px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -23,7 +23,7 @@ merits {
           align-items: center;
   background-color: #232324; }
 
-merits_top {
+.merits_top {
   padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -46,18 +46,18 @@ merits_top {
       -ms-flex-align: center;
           align-items: center; }
 
-merits_top_title {
+.merits_top_title {
   padding: 20px;
   font-size: 40pt;
   font-weight: bold;
   letter-spacing: 5px;
   color: white; }
 
-merits_top_subtitle {
+.merits_top_subtitle {
   font-size: 20pt;
   color: #d94948; }
 
-merits_box {
+.merits_box {
   width: 75%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -79,7 +79,7 @@ merits_box {
       -ms-flex-align: center;
           align-items: center; }
 
-merits_box_item {
+.merits_box_item {
   width: 25%;
   padding-left: 40px;
   padding-right: 40px;
@@ -104,11 +104,11 @@ merits_box_item {
       -ms-flex-align: center;
           align-items: center; }
 
-merits_box_item_title {
+.merits_box_item_title {
   padding-top: 10px;
   font-size: 30pt;
   color: white; }
 
-merits_box_item_subtitle {
+.merits_box_item_subtitle {
   font-size: 18pt;
   color: #d94948; }

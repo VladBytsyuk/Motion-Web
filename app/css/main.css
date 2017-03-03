@@ -13,10 +13,10 @@ body {
   background-color: white; }
 
 /* ==== HEADER ==== */
-header {
+.header {
   color: white; }
 
-header_navbar {
+.header_navbar {
   width: 100%;
   min-width: 60px;
   display: -webkit-box;
@@ -31,7 +31,7 @@ header_navbar {
           flex-wrap: nowrap;
   background-color: #eb4f4e; }
 
-header_navbar_top {
+.header_navbar_top {
   min-width: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -52,7 +52,7 @@ header_navbar_top {
   background-color: #f56262; }
 
 /* LOGO */
-header_navbar_top_logo {
+.header_navbar_top_logo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -69,14 +69,14 @@ header_navbar_top_logo {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-header_navbar_top_logo_title {
+.header_navbar_top_logo_title {
   font-size: 35pt; }
 
-header_navbar_top_logo_subtitle {
+.header_navbar_top_logo_subtitle {
   font-size: 17pt; }
 
 /* MENU */
-header_navbar_top_menu {
+.header_navbar_top_menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -95,7 +95,7 @@ header_navbar_top_menu {
   font-size: 16pt;
   font-weight: bold; }
 
-header_navbar_top_menu_item_highlighted {
+.header_navbar_top_menu_item_highlighted {
   padding-top: 5px;
   padding-right: 15px;
   padding-bottom: 5px;
@@ -105,11 +105,11 @@ header_navbar_top_menu_item_highlighted {
           border-radius: 4px;
   background-color: black; }
 
-header_navbar_top_menu_item {
+.header_navbar_top_menu_item {
   padding-right: 40px; }
 
 /* CORNER */
-header_navbar_corner {
+.header_navbar_corner {
   float: right;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -118,7 +118,7 @@ header_navbar_corner {
   background-color: #f56262; }
 
 /* SLIDER */
-header_slider {
+.header_slider {
   padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -143,20 +143,20 @@ header_slider {
   font-weight: bold;
   background-color: #eb4f4e; }
 
-header_slider_title {
+.header_slider_title {
   font-size: 60pt;
   letter-spacing: 10px; }
 
 @media (max-width: 420px) {
-  header_slider_title {
+  .header_slider_title {
     font-size: 40pt; } }
 
-header_slider_subtitle {
+.header_slider_subtitle {
   padding: 40px;
   font-size: 20pt; }
 
 /* ==== MERITS ====*/
-merits {
+.merits {
   padding: 20px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -180,7 +180,7 @@ merits {
           align-items: center;
   background-color: #232324; }
 
-merits_top {
+.merits_top {
   padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -203,18 +203,18 @@ merits_top {
       -ms-flex-align: center;
           align-items: center; }
 
-merits_top_title {
+.merits_top_title {
   padding: 20px;
   font-size: 40pt;
   font-weight: bold;
   letter-spacing: 5px;
   color: white; }
 
-merits_top_subtitle {
+.merits_top_subtitle {
   font-size: 20pt;
   color: #d94948; }
 
-merits_box {
+.merits_box {
   width: 75%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -236,7 +236,7 @@ merits_box {
       -ms-flex-align: center;
           align-items: center; }
 
-merits_box_item {
+.merits_box_item {
   width: 25%;
   padding-left: 40px;
   padding-right: 40px;
@@ -261,17 +261,17 @@ merits_box_item {
       -ms-flex-align: center;
           align-items: center; }
 
-merits_box_item_title {
+.merits_box_item_title {
   padding-top: 10px;
   font-size: 30pt;
   color: white; }
 
-merits_box_item_subtitle {
+.merits_box_item_subtitle {
   font-size: 18pt;
   color: #d94948; }
 
 /* ==== TEAM ==== */
-team {
+.team {
   padding: 20px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -295,7 +295,7 @@ team {
           align-items: center;
   background-color: #6cc372; }
 
-team_top {
+.team_top {
   padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -318,18 +318,18 @@ team_top {
       -ms-flex-align: center;
           align-items: center; }
 
-team_top_title {
+.team_top_title {
   padding: 20px;
   font-size: 40pt;
   font-weight: bold;
   letter-spacing: 5px;
   color: white; }
 
-team_top_subtitle {
+.team_top_subtitle {
   font-size: 20pt;
   color: black; }
 
-team_box {
+.team_box {
   width: 65%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -351,7 +351,7 @@ team_box {
       -ms-flex-align: center;
           align-items: center; }
 
-team_box_item {
+.team_box_item {
   width: 230px;
   margin: 8px;
   padding: 8px;
@@ -386,13 +386,13 @@ team_box_item {
       -ms-flex-negative: 0;
           flex-shrink: 0; }
 
-team_box_item_name {
+.team_box_item_name {
   font-size: 25pt;
   padding-top: 16px;
   white-space: nowrap;
   color: #61af66; }
 
-team_box_item_position {
+.team_box_item_position {
   padding-top: 16px;
   padding-bottom: 16px;
   font-size: 18pt;
@@ -400,14 +400,14 @@ team_box_item_position {
   color: #e74c3c; }
 
 @media (max-width: 1079px) {
-  team_box_item_name {
+  .team_box_item_name {
     word-wrap: break-word;
     white-space: normal; }
-  team_box_item_position {
+  .team_box_item_position {
     word-wrap: break-word;
     white-space: normal; } }
 
-team_box_item_button {
+.team_box_item_button {
   width: 90%;
   padding: 4px;
   -webkit-border-radius: 4px;
@@ -436,11 +436,11 @@ team_box_item_button {
   color: white;
   background-color: #61af66; }
 
-team_box_item_button_text {
+.team_box_item_button_text {
   padding-left: 16px; }
 
 /* ==== PORTFOLIO ==== */
-portfolio {
+.portfolio {
   padding: 20px;
   padding-bottom: 160px;
   display: -webkit-box;
@@ -466,7 +466,7 @@ portfolio {
   border-bottom: 1px solid #cacaca;
   background-color: #ececec; }
 
-portfolio_top {
+.portfolio_top {
   padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -489,18 +489,18 @@ portfolio_top {
       -ms-flex-align: center;
           align-items: center; }
 
-portfolio_top_title {
+.portfolio_top_title {
   padding: 20px;
   font-size: 40pt;
   font-weight: bold;
   letter-spacing: 5px;
   color: #616161; }
 
-portfolio_top_subtitle {
+.portfolio_top_subtitle {
   font-size: 20pt;
   color: #61af66; }
 
-portfolio_slider {
+.portfolio_slider {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -523,7 +523,7 @@ portfolio_slider {
       -ms-flex-align: center;
           align-items: center; }
 
-portfolio_slider_box {
+.portfolio_slider_box {
   width: 70%;
   padding-left: 72px;
   padding-right: 72px;
@@ -547,7 +547,7 @@ portfolio_slider_box {
       -ms-flex-align: center;
           align-items: center; }
 
-portfolio_slider_box_item {
+.portfolio_slider_box_item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -575,13 +575,13 @@ portfolio_slider_box_item {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-portfolio_slider_box_item_name {
+.portfolio_slider_box_item_name {
   padding-top: 16px;
   font-size: 21pt;
   white-space: nowrap;
   color: #232324; }
 
-portfolio_pages {
+.portfolio_pages {
   width: 100px;
   margin: 16px;
   display: -webkit-box;
@@ -604,7 +604,7 @@ portfolio_pages {
       -ms-flex-align: center;
           align-items: center; }
 
-portfolio_pages_item {
+.portfolio_pages_item {
   width: 10px;
   height: 10px;
   -webkit-border-radius: 50%;
@@ -612,7 +612,7 @@ portfolio_pages_item {
   font-size: 0px;
   background-color: #616161; }
 
-portfolio_pages_item_highlighted {
+.portfolio_pages_item_highlighted {
   width: 10px;
   height: 10px;
   -webkit-border-radius: 50%;
@@ -621,7 +621,7 @@ portfolio_pages_item_highlighted {
   background-color: #61af66; }
 
 /* ==== PRICING ==== */
-pricing {
+.pricing {
   padding: 20px;
   padding-bottom: 320px;
   display: -webkit-box;
@@ -646,7 +646,7 @@ pricing {
           align-items: center;
   background-color: white; }
 
-pricing_box {
+.pricing_box {
   width: 70%;
   margin-top: -175px;
   padding-left: 72px;
@@ -671,7 +671,7 @@ pricing_box {
       -ms-flex-align: end;
           align-items: flex-end; }
 
-pricing_box_item {
+.pricing_box_item {
   width: 20%;
   min-width: 300px;
   padding-top: 8px;
@@ -695,7 +695,7 @@ pricing_box_item {
       -ms-flex-align: center;
           align-items: center; }
 
-pricing_box_item_accent {
+.pricing_box_item_accent {
   width: 20%;
   min-width: 300px;
   padding-top: 8px;
@@ -719,7 +719,7 @@ pricing_box_item_accent {
       -ms-flex-align: center;
           align-items: center; }
 
-pricing_box_item_header {
+.pricing_box_item_header {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -746,7 +746,7 @@ pricing_box_item_header {
   -webkit-border-radius: 4px 4px 0 0;
           border-radius: 4px 4px 0 0; }
 
-pricing_box_item_accent_header {
+.pricing_box_item_accent_header {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -773,31 +773,31 @@ pricing_box_item_accent_header {
   -webkit-border-radius: 4px 4px 0 0;
           border-radius: 4px 4px 0 0; }
 
-pricing_box_item_header_title {
+.pricing_box_item_header_title {
   padding-top: 8px;
   padding-bottom: 4px;
   font-size: 40pt;
   color: #616161; }
 
-pricing_box_item_accent_header_title {
+.pricing_box_item_accent_header_title {
   padding-top: 8px;
   padding-bottom: 4px;
   font-size: 40pt;
   color: #eb4f4e; }
 
-pricing_box_item_header_subtitle {
+.pricing_box_item_header_subtitle {
   padding-top: 4px;
   padding-bottom: 16px;
   font-size: 20pt;
   color: #eb4f4e; }
 
-pricing_box_item_accent_header_subtitle {
+.pricing_box_item_accent_header_subtitle {
   ppadding-top: 4px;
   padding-bottom: 16px;
   font-size: 20pt;
   color: #616161; }
 
-pricing_box_item_options {
+.pricing_box_item_options {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -822,7 +822,7 @@ pricing_box_item_options {
   border-right: 1px solid #ececec;
   background-color: #ececec; }
 
-pricing_box_item_accent_options {
+.pricing_box_item_accent_options {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -847,21 +847,21 @@ pricing_box_item_accent_options {
   border-right: 1px solid #ececec;
   background-color: #ececec; }
 
-pricing_box_item_options_option {
+.pricing_box_item_options_option {
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid black;
   color: #616161; }
 
-pricing_box_item_accent_options_option {
+.pricing_box_item_accent_options_option {
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid black;
   color: #616161; }
 
-pricing_box_item_order {
+.pricing_box_item_order {
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -895,7 +895,7 @@ pricing_box_item_order {
   text-align: left;
   color: white; }
 
-pricing_box_item_accent_order {
+.pricing_box_item_accent_order {
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -929,35 +929,43 @@ pricing_box_item_accent_order {
   text-align: left;
   color: white; }
 
-pricing_box_item_order_price_dol {
+.pricing_box_item_order_price {
+  display: inherit; }
+
+.pricing_box_item_accent_order_price {
+  display: inherit; }
+
+.pricing_box_item_order_price_dol {
   vertical-align: top;
   padding-left: 20px;
   font-size: 20pt;
   font-family: 'sans-serif'; }
 
-pricing_box_item_accent_order_price_dol {
+.pricing_box_item_accent_order_price_dol {
   vertical-align: top;
   padding-left: 20px;
   font-size: 20pt;
   font-family: 'sans-serif'; }
 
-pricing_box_item_order_price_value {
+.pricing_box_item_order_price_value {
   font-size: 30pt;
   font-family: 'sans-serif';
   font-weight: bold; }
 
-pricing_box_item_accent_order_price_value {
+.pricing_box_item_accent_order_price_value {
   font-size: 30pt;
   font-family: 'sans-serif';
   font-weight: bold; }
 
-pricing_box_item_order_price_periodicity {
-  font-size: 14pt; }
+.pricing_box_item_order_price_periodicity {
+  font-size: 14pt;
+  padding-top: 20px; }
 
-pricing_box_item_accent_order_price_periodicity {
-  font-size: 14pt; }
+.pricing_box_item_accent_order_price_periodicity {
+  font-size: 14pt;
+  padding-top: 20px; }
 
-pricing_box_item_order_button {
+.pricing_box_item_order_button {
   padding-top: 8px;
   padding-right: 32px;
   padding-bottom: 8px;
@@ -968,7 +976,7 @@ pricing_box_item_order_button {
           border-radius: 4px;
   background-color: white; }
 
-pricing_box_item_accent_order_button {
+.pricing_box_item_accent_order_button {
   padding-top: 8px;
   padding-right: 32px;
   padding-bottom: 8px;
@@ -979,13 +987,13 @@ pricing_box_item_accent_order_button {
           border-radius: 4px;
   background-color: white; }
 
-pricing_info {
+.pricing_info {
   font-size: 20pt;
   padding: 40px;
   color: #eb4f4e; }
 
 /* ==== TWEETS ==== */
-tweets {
+.tweets {
   margin-top: -250px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1004,7 +1012,7 @@ tweets {
           align-items: center;
   background-color: #eb4f4e; }
 
-tweets_hearth {
+.tweets_hearth {
   width: 65%;
   padding-top: 40px;
   padding-right: 60px;
@@ -1031,27 +1039,26 @@ tweets_hearth {
       -ms-flex-align: center;
           align-items: center; }
 
-tweets_hearth_title {
+.tweets_hearth_title {
   font-size: 40pt;
   letter-spacing: 10px;
   font-weight: bold;
   color: white; }
 
-tweets_hearth_subtitle {
+.tweets_hearth_subtitle {
   padding-bottom: 20px;
   font-size: 20pt;
   color: black; }
 
-tweets_hearth_tweet {
+.tweets_hearth_tweet {
   padding: 20px;
   font-size: 20pt;
-  font-family: 'bariol-italic'; }
-
-tweets_hearth_tweet_core {
-  color: white; }
+  font-family: 'bariol-italic';
+  text-align: start;
+  color: black; }
 
 /* ==== FOOTER ==== */
-footer {
+.footer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1074,7 +1081,7 @@ footer {
           align-items: center;
   background-image: url(/img/map.png); }
 
-footer_box {
+.footer_box {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1089,7 +1096,7 @@ footer_box {
     justify-content-align-items: center;
   background-color: #232324; }
 
-footer_box_copy {
+.footer_box_copy {
   width: 62%;
   padding: 10px;
   display: -webkit-box;
@@ -1108,13 +1115,24 @@ footer_box_copy {
       -ms-flex-align: center;
           align-items: center; }
 
-footer_box_copy_item_text {
+.footer_box_copy_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-contene: space-between;
+  -webkit-box-flex: wrap;
+  -webkit-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap; }
+
+.footer_box_copy_item_text {
   color: white; }
 
-footer_box_copy_item_accent {
+.footer_box_copy_item_accent {
   color: #eb4f4e; }
 
-footer_info {
+.footer_info {
   margin: 40px;
   padding-left: 15%;
   padding-right: 15%;
@@ -1143,11 +1161,11 @@ footer_info {
           border-radius: 4px;
   color: white; }
 
-footer_info_title {
+.footer_info_title {
   padding: 20px;
   font-size: 30pt; }
 
-footer_info_text {
+.footer_info_text {
   padding: 20px;
   padding-top: 0px;
   color: #eb4f4e; }

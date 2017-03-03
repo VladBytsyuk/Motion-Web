@@ -1,8 +1,8 @@
 /* ==== HEADER ==== */
-header {
+.header {
   color: white; }
 
-header_navbar {
+.header_navbar {
   width: 100%;
   min-width: 60px;
   display: -webkit-box;
@@ -17,7 +17,7 @@ header_navbar {
           flex-wrap: nowrap;
   background-color: #eb4f4e; }
 
-header_navbar_top {
+.header_navbar_top {
   min-width: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -38,7 +38,7 @@ header_navbar_top {
   background-color: #f56262; }
 
 /* LOGO */
-header_navbar_top_logo {
+.header_navbar_top_logo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -55,14 +55,14 @@ header_navbar_top_logo {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-header_navbar_top_logo_title {
+.header_navbar_top_logo_title {
   font-size: 35pt; }
 
-header_navbar_top_logo_subtitle {
+.header_navbar_top_logo_subtitle {
   font-size: 17pt; }
 
 /* MENU */
-header_navbar_top_menu {
+.header_navbar_top_menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -81,7 +81,7 @@ header_navbar_top_menu {
   font-size: 16pt;
   font-weight: bold; }
 
-header_navbar_top_menu_item_highlighted {
+.header_navbar_top_menu_item_highlighted {
   padding-top: 5px;
   padding-right: 15px;
   padding-bottom: 5px;
@@ -91,11 +91,11 @@ header_navbar_top_menu_item_highlighted {
           border-radius: 4px;
   background-color: black; }
 
-header_navbar_top_menu_item {
+.header_navbar_top_menu_item {
   padding-right: 40px; }
 
 /* CORNER */
-header_navbar_corner {
+.header_navbar_corner {
   float: right;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -104,7 +104,7 @@ header_navbar_corner {
   background-color: #f56262; }
 
 /* SLIDER */
-header_slider {
+.header_slider {
   padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -129,14 +129,14 @@ header_slider {
   font-weight: bold;
   background-color: #eb4f4e; }
 
-header_slider_title {
+.header_slider_title {
   font-size: 60pt;
   letter-spacing: 10px; }
 
 @media (max-width: 420px) {
-  header_slider_title {
+  .header_slider_title {
     font-size: 40pt; } }
 
-header_slider_subtitle {
+.header_slider_subtitle {
   padding: 40px;
   font-size: 20pt; }

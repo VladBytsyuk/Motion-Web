@@ -1,5 +1,5 @@
 /* ==== PORTFOLIO ==== */
-portfolio {
+.portfolio {
   padding: 20px;
   padding-bottom: 160px;
   display: -webkit-box;
@@ -25,7 +25,7 @@ portfolio {
   border-bottom: 1px solid #cacaca;
   background-color: #ececec; }
 
-portfolio_top {
+.portfolio_top {
   padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -48,18 +48,18 @@ portfolio_top {
       -ms-flex-align: center;
           align-items: center; }
 
-portfolio_top_title {
+.portfolio_top_title {
   padding: 20px;
   font-size: 40pt;
   font-weight: bold;
   letter-spacing: 5px;
   color: #616161; }
 
-portfolio_top_subtitle {
+.portfolio_top_subtitle {
   font-size: 20pt;
   color: #61af66; }
 
-portfolio_slider {
+.portfolio_slider {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -82,7 +82,7 @@ portfolio_slider {
       -ms-flex-align: center;
           align-items: center; }
 
-portfolio_slider_box {
+.portfolio_slider_box {
   width: 70%;
   padding-left: 72px;
   padding-right: 72px;
@@ -106,7 +106,7 @@ portfolio_slider_box {
       -ms-flex-align: center;
           align-items: center; }
 
-portfolio_slider_box_item {
+.portfolio_slider_box_item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -134,13 +134,13 @@ portfolio_slider_box_item {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-portfolio_slider_box_item_name {
+.portfolio_slider_box_item_name {
   padding-top: 16px;
   font-size: 21pt;
   white-space: nowrap;
   color: #232324; }
 
-portfolio_pages {
+.portfolio_pages {
   width: 100px;
   margin: 16px;
   display: -webkit-box;
@@ -163,7 +163,7 @@ portfolio_pages {
       -ms-flex-align: center;
           align-items: center; }
 
-portfolio_pages_item {
+.portfolio_pages_item {
   width: 10px;
   height: 10px;
   -webkit-border-radius: 50%;
@@ -171,7 +171,7 @@ portfolio_pages_item {
   font-size: 0px;
   background-color: #616161; }
 
-portfolio_pages_item_highlighted {
+.portfolio_pages_item_highlighted {
   width: 10px;
   height: 10px;
   -webkit-border-radius: 50%;
