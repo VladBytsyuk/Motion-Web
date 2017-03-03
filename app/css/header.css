@@ -56,6 +56,15 @@
           flex-direction: column; }
 
 .header_navbar_top_logo_title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-conytent: space-around;
+  -webkit-box-flex: wrap;
+  -webkit-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
   font-size: 35pt; }
 
 .header_navbar_top_logo_subtitle {
