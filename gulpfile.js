@@ -17,7 +17,7 @@ gulp.task('clear', function() {
     return cahce.clearAll();
 });
 
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', [ 'img' ], function() {
     browserSync({
             server: {
                     baseDir: 'app'
@@ -29,6 +29,7 @@ gulp.task('browser-sync', function() {
 gulp.task('sass', function() {
     return gulp.src('app/sass/**/*.sass')
             .pipe(sass())
+            .pipe(cssnano())
             .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
             .pipe(gulp.dest('app/css'))
             .pipe(browserSync.reload({stream: true}))
@@ -41,17 +42,17 @@ gulp.task('css-libs', ['sass'], function() {
             .pipe(gulp.dest('app/css'));
 });
 
-gulp.task('scripts', function() {
-    return gulp.src([
-                'app/libs/jquery/dist/jquery.min.js',
-                'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
-            ])
-            .pipe(concat('libs.min.js'))
-            .pipe(uglify())
-            .pipe(gulp.dest('app/js'));
-});
+// gulp.task('scripts', function() {
+//     return gulp.src([
+//                 'app/libs/jquery/dist/jquery.min.js',
+//                 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
+//             ])
+//             .pipe(concat('libs.min.js'))
+//             .pipe(uglify())
+//             .pipe(gulp.dest('app/js'));
+// });
 
-gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
+gulp.task('watch', ['browser-sync', 'css-libs', /*'scripts'*/], function() {
     gulp.watch('app/sass/**/*.sass', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
@@ -72,7 +73,7 @@ gulp.task('img', function() {
             .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'sass'/*, 'scripts'*/], function() {
     var buildCss = gulp.src([
                 'app/css/main.css',
                 'app/css/libs.min.css'
