@@ -9,12 +9,15 @@ var gulp            = require('gulp'),
     imagemin        = require('gulp-imagemin'),
     pngquant        = require('imagemin-pngquant'),
     cache           = require('gulp-cache'),
-    autoprefixer    = require('gulp-autoprefixer');
+    autoprefixer    = require('gulp-autoprefixer'),
+    eslint          = require('gulp-eslint'),
+    babel           = require('gulp-babel');
+
 
 gulp.task('default', ['watch']);
 
 gulp.task('clear', function() {
-    return cahce.clearAll();
+    return cache.clearAll();
 });
 
 gulp.task('browser-sync', [ 'img' ], function() {
@@ -42,17 +45,27 @@ gulp.task('css-libs', ['sass'], function() {
             .pipe(gulp.dest('app/css'));
 });
 
-// gulp.task('scripts', function() {
-//     return gulp.src([
-//                 'app/libs/jquery/dist/jquery.min.js',
-//                 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
-//             ])
-//             .pipe(concat('libs.min.js'))
-//             .pipe(uglify())
-//             .pipe(gulp.dest('app/js'));
-// });
+gulp.task('scripts', function() {
+    return gulp.src([
+                'app/libs/jquery/dist/jquery.min.js',
+                'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
+            ])
+            .pipe(concat('libs.min.js'))
+            .pipe(babel({
+                    presets: ['es2015']
+            }))
+            .pipe(uglify())
+            .pipe(gulp.dest('app/js'));
+});
 
-gulp.task('watch', ['browser-sync', 'css-libs', /*'scripts'*/], function() {
+gulp.task('lint', function() {
+    return gulp.src(['**/*.js','!node_modules/**'])
+            .pipe(eslint())
+            .pipe(eslint.format())
+            .pipe(eslint.failAfterError());
+});
+
+gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
     gulp.watch('app/sass/**/*.sass', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
@@ -73,19 +86,26 @@ gulp.task('img', function() {
             .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('build', ['clean', 'img', 'sass'/*, 'scripts'*/], function() {
-    var buildCss = gulp.src([
+gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
+    //Build Css
+    gulp.src([
                 'app/css/main.css',
                 'app/css/libs.min.css'
             ])
             .pipe(gulp.dest('dist/css'));
 
-    var buildFonts = gulp.src('app/fonts/**/*')
+    //Build Fonts
+    gulp.src('app/fonts/**/*')
             .pipe(gulp.dest('dist/fonts'));
 
-    var buildJs = gulp.src('app/js/**/*')
+    //Build Js
+    gulp.src('app/js/**/*')
+            .pipe(babel({
+                    presets: ['es2015']
+            }))
             .pipe(gulp.dest('dist/js'));
 
-    var buildHtml = gulp.src('app/*html')
+    //Build Htmls
+    gulp.src('app/*html')
             .pipe(gulp.dest('dist'));
 });
