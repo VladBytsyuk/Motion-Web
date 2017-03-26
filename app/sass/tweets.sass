@@ -6,26 +6,32 @@ $background: #eb4f4e
 	margin-top: -250px
 	display: flex
 	justify-content: center
+	flex-direction: column
 	flex-wrap: nowrap
 	align-items: center
 	background-color: $background
 
+.tweet_slider
+	width: 85%
+	display: flex
+	justify-content: center
+	flex-wrap: nowrap
+	align-items: center
+
 .tweets_hearth
-	width: 65%
+	width: 95%
 	padding-top: 40px
 	padding-bottom: 40px
 	padding-left: 20px
 	padding-right: 20px
-	display: flex
-	justify-content: space-around
-	flex: wrap
-	flex-direction: column
-	align-items: center
+	text-align: left
 
 .tweets_title
 	font-size: 40pt
 	letter-spacing: 10px
 	font-weight: bold
+	padding-top: 40px
+	padding-bottom: 40px
 	color: white
 
 .tweets_subtitle
@@ -34,18 +40,26 @@ $background: #eb4f4e
 	color: black
 
 .tweets_hearth_tweet
-	width: 100%
-	padding: 20px
+	width: 60%
+	position: absolute
 	font-size: 20pt
 	font-family: 'bariol-italic', 'bariol'
-	text-align: start
 	color: black
-	white-space: pre-wrap
+	opacity: 0
+	transition: opacity 1s
 
-@media(max-width: 420px)
+.tweet_hit_zone
+	padding: 30px
+
+@media(max-width: 520px)
 	.tweets_title
 		font-size: 20pt
 	.tweets_subtitle
 		font-size: 16pt
 	.tweets_hearth_tweet
 		font-size: 14pt
+	.tweet_hit_zone
+		padding: 10px
+	.tweets_title
+		padding-top: 20px
+		padding-bottom: 20px

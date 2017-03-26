@@ -1,7 +1,9 @@
+'use strict';
+
 var portfolioArrowRight = document.getElementById('portfolio_next');
 var portfolioArrowLeft = document.getElementById('portfolio_prev');
 
-var portfolioSlider = new function() {
+var portfolioSlider = new function () {
     var slider = document.getElementById('portfolio_slider');
     var slideHolder = document.getElementById('portfolio_holder');
     var slides = slider.getElementsByClassName('portfolio_box');
@@ -36,18 +38,16 @@ var portfolioSlider = new function() {
         init: init,
         nextSlide: nextSlide,
         prevSlide: prevSlide
-    }
-};
+    };
+}();
 
 portfolioArrowRight.addEventListener('click', portfolioSlider.nextSlide);
 portfolioArrowLeft.addEventListener('click', portfolioSlider.prevSlide);
 
-
-
 var tweetsArrowRight = document.getElementById('tweets_next');
 var tweetsArrowLeft = document.getElementById('tweets_prev');
 
-var tweetsSlider = new function() {
+var tweetsSlider = new function () {
     var slideHolder = document.getElementById('tweets_hearth');
     var slides = slideHolder.getElementsByClassName('tweets_hearth_tweet');
     var slidesAmount = slides.length;
@@ -57,7 +57,7 @@ var tweetsSlider = new function() {
 
     function init(event) {
         slideHolder.style.width = slides[currentSlide].clientWidth + 'px';
-        slideHolder.style.height =  slides[currentSlide].clientHeight + 'px';
+        slideHolder.style.height = slides[currentSlide].clientHeight + 'px';
         // slides[currentSlide].style.width = (slideHolder.clientWidth - 80) + 'px';
         // slides[currentSlide].style.height =  slideHolder.clientHeight + 'px';
     }
@@ -75,15 +75,15 @@ var tweetsSlider = new function() {
     }
 
     return {
-    	init: init,
+        init: init,
         nextSlide: nextSlide,
         prevSlide: prevSlide
-    }
-};
+    };
+}();
 
-window.onresize = function() {
-	portfolioSlider.init();
-	tweetsSlider.init();
-}
+window.onresize = function () {
+    portfolioSlider.init();
+    tweetsSlider.init();
+};
 tweetsArrowRight.addEventListener('click', tweetsSlider.nextSlide);
 tweetsArrowLeft.addEventListener('click', tweetsSlider.prevSlide);
