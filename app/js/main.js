@@ -58,8 +58,6 @@ var tweetsSlider = new function() {
     function init(event) {
         slideHolder.style.width = slides[currentSlide].clientWidth + 'px';
         slideHolder.style.height =  slides[currentSlide].clientHeight + 'px';
-        // slides[currentSlide].style.width = (slideHolder.clientWidth - 80) + 'px';
-        // slides[currentSlide].style.height =  slideHolder.clientHeight + 'px';
     }
 
     function nextSlide() {
