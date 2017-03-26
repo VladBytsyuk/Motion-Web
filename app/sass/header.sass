@@ -68,7 +68,14 @@ $top_background: #f56262
 	background-color: black
 
 .navbar_menu_item
-	padding-right: 40px
+	padding: 5px
+	padding-left: 20px
+	padding-right: 20px
+	&:hover
+		background-color: #232324
+		border-radius: 4px
+		border-color: #232324
+
 
 
 
@@ -108,6 +115,39 @@ $top_background: #f56262
 
 .slider_image
 	width: 75%
+
+.header_popup
+	display: flex
+	position: absolute
+	margin-left: -60px
+	ustify-content: center
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: stretch
+	background-color: #f9f9f9
+	z-index: 1
+	opacity: 0
+	visibility: hidden
+	transition: visibility 1s, opacity 1s
+	background-color: #232324
+	border-radius: 4px
+    border-color: #232324
+
+.popup_item
+	padding: 5px
+	padding-left: 20px
+	padding-right: 20px
+	&:hover
+		background-color: #454546
+		border-radius: 4px
+		border-color: #454546
+
+.header_hit_zone
+	padding: 10px
+	margin-top: -5px
+	position: relative
+	display: inline-block
+	margin-left: 20px
 
 @media(max-width: 420px)
 	.logo_title
