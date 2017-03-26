@@ -58,6 +58,13 @@ gulp.task('scripts', function() {
             .pipe(gulp.dest('app/js'));
 });
 
+gulp.task('js-concat', function() {
+    return gulp.src(['app/js/**/*.js', '!app/js/**/main.js'])
+            .pipe(concat('main.js'))
+            .pipe(uglify())
+            .pipe(gulp.dest('app/js'));
+});
+
 gulp.task('lint', function() {
     return gulp.src(['**/*.js','!node_modules/**'])
             .pipe(eslint())
