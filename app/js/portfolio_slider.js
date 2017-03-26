@@ -22,6 +22,7 @@ var portfolioSlider = new function() {
         currentSlide = currentSlide < slidesAmount - 1 ? currentSlide + 1 : 0;
         slides[currentSlide].style.opacity = 1;
         pages[currentSlide].classList.add('portfolio_pages_item_highlighted');
+        init(undefined);
     }
 
     function prevSlide() {
@@ -30,6 +31,7 @@ var portfolioSlider = new function() {
         currentSlide = currentSlide > 0 ? currentSlide - 1 : slidesAmount - 1;
         slides[currentSlide].style.opacity = 1;
         pages[currentSlide].classList.add('portfolio_pages_item_highlighted');
+        init(undefined);
     }
 
     return {
