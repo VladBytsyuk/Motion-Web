@@ -1,3 +1,34 @@
+var menu = document.getElementById('header_menu');
+var items = menu.getElementsByClassName('navbar_menu_item');
+var header = document.getElementById('header');
+
+function redrawMenu() {
+	items[items.length - 1].style.display = 'block'; 
+	items[items.length - 2].style.display = 'block'; 
+	items[items.length - 3].style.display = 'block'; 
+	items[items.length - 4].style.display = 'block'; 
+	items[items.length - 5].style.display = 'block'; 
+	items[items.length - 6].style.display = 'block'; 
+	console.log(header.clientWidth);
+	if (header.clientWidth < 1000) {
+		items[items.length - 1].style.display = 'none'; 
+	}
+	if (header.clientWidth  < 900) {
+		items[items.length - 2].style.display = 'none'; 
+	}
+	if (header.clientWidth  < 800) {
+		items[items.length - 3].style.display = 'none'; 
+	}
+	if (header.clientWidth  < 700) {
+		items[items.length - 4].style.display = 'none'; 
+	}
+	if (header.clientWidth  < 600) {
+		items[items.length - 5].style.display = 'none'; 
+	}
+	if (header.clientWidth  < 500) {
+		items[items.length - 6].style.display = 'none'; 
+	}
+}
 var callback = document.getElementById('callback_btn');
 
 var callbackAction = new function() {
@@ -21,7 +52,7 @@ var callbackAction = new function() {
 		popup.style.opacity = 0;
 	}
 
-	function send(name, phone, adress) {
+	function send(userInfo) {
 		close();
 	}
 
@@ -48,7 +79,12 @@ var callbackAction = new function() {
 		if (isBreak) {
 			return;
 		}
-		send(nameField.value, phoneField.value, adressField.value);
+		var userInfo = {
+			name: nameField.value,
+			phone: phoneField.value,
+			adress: adressField.value
+		}
+		send(userInfo);
 	});
 
 	return {
@@ -105,6 +141,7 @@ portfolioArrowLeft.addEventListener('click', portfolioSlider.prevSlide);
 window.onresize = function() {
 	portfolioSlider.init();
 	tweetsSlider.init();
+	redrawMenu();
 }
 var tweetsArrowRight = document.getElementById('tweets_next');
 var tweetsArrowLeft = document.getElementById('tweets_prev');
