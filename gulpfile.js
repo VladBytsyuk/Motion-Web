@@ -45,7 +45,7 @@ gulp.task('css-libs', ['sass'], function() {
             .pipe(gulp.dest('app/css'));
 });
 
-gulp.task('scripts', function() {
+gulp.task('scripts', ['js-concat'], function() {
     return gulp.src([
                 'app/libs/jquery/dist/jquery.min.js',
                 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
@@ -58,10 +58,13 @@ gulp.task('scripts', function() {
             .pipe(gulp.dest('app/js'));
 });
 
-gulp.task('js-concat', function() {
-    return gulp.src(['app/js/**/*.js', '!app/js/**/main.js'])
+gulp.task('js-clean', function() {
+    return del.sync('app/js/**/main.js');
+});
+
+gulp.task('js-concat', ['js-clean'], function() {
+    return gulp.src('app/js/**/*.js')
             .pipe(concat('main.js'))
-            .pipe(uglify())
             .pipe(gulp.dest('app/js'));
 });
 

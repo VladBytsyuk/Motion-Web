@@ -1,3 +1,35 @@
+var callback = document.getElementById('callback_btn');
+
+var callbackAction = new function() {
+	var popup = document.getElementById('popup');
+
+	var nameField = document.getElementById('fname');
+	var phoneField = document.getElementById('fnumber');
+	var adressField = document.getElementById('fadress');
+	var submit = document.getElementById('popup_btn');
+
+	function open() {
+		popup.style.visibility = 'visible';
+		popup.style.opacity = 1;
+	}
+
+	function close() {
+		popup.style.visibility = 'hidden';
+		popup.style.opacity = 0;
+	}
+
+	submit.addEventListener('click', function() {
+		close();
+	});
+
+	return {
+		open : open
+	}
+};
+
+callback.addEventListener('click', callbackAction.open);
+
+
 var portfolioArrowRight = document.getElementById('portfolio_next');
 var portfolioArrowLeft = document.getElementById('portfolio_prev');
 
@@ -41,9 +73,10 @@ var portfolioSlider = new function() {
 
 portfolioArrowRight.addEventListener('click', portfolioSlider.nextSlide);
 portfolioArrowLeft.addEventListener('click', portfolioSlider.prevSlide);
-
-
-
+window.onresize = function() {
+	portfolioSlider.init();
+	tweetsSlider.init();
+}
 var tweetsArrowRight = document.getElementById('tweets_next');
 var tweetsArrowLeft = document.getElementById('tweets_prev');
 
@@ -79,9 +112,5 @@ var tweetsSlider = new function() {
     }
 };
 
-window.onresize = function() {
-	portfolioSlider.init();
-	tweetsSlider.init();
-}
 tweetsArrowRight.addEventListener('click', tweetsSlider.nextSlide);
 tweetsArrowLeft.addEventListener('click', tweetsSlider.prevSlide);
