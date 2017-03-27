@@ -109,10 +109,11 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
             .pipe(gulp.dest('dist/fonts'));
 
     //Build Js
-    gulp.src('app/js/**/*')
+    gulp.src('app/js/**/main.js')
             .pipe(babel({
                     presets: ['es2015']
             }))
+            .pipe(uglify())
             .pipe(gulp.dest('dist/js'));
 
     //Build Htmls
