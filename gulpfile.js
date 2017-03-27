@@ -69,7 +69,7 @@ gulp.task('js-concat', ['js-clean'], function() {
 });
 
 gulp.task('lint', function() {
-    return gulp.src(['**/*.js','!node_modules/**'])
+    return gulp.src(['app/**/*.js', '!app/**/main.js','!node_modules/**'])
             .pipe(eslint())
             .pipe(eslint.format())
             .pipe(eslint.failAfterError());

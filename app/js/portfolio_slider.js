@@ -8,13 +8,15 @@ var portfolioSlider = new function() {
     var pages = document.getElementsByClassName('portfolio_pages_item');
     var slidesAmount = slides.length;
     var currentSlide = 0;
+
     slides[currentSlide].style.opacity = 1;
     pages[currentSlide].classList.add('portfolio_pages_item_highlighted');
-    init(undefined);
 
     function init(event) {
         slideHolder.style.height = slides[currentSlide].clientHeight + 'px';
     }
+    init(undefined);
+
 
     function nextSlide() {
         slides[currentSlide].style.opacity = 0;

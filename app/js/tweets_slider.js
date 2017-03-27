@@ -27,7 +27,7 @@ var tweetsSlider = new function() {
     }
 
     return {
-    	init: init,
+        init: init,
         nextSlide: nextSlide,
         prevSlide: prevSlide
     }
