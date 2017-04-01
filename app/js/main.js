@@ -229,6 +229,8 @@ function fillText(text) {
     fillHeader(text);
     fillMerits(text);
     fillTeam(text);
+    fillPortfolio(text);
+    fillPricing(text);
 
     function fillHeader(text) {
         document.getElementById('logo_title').innerText = text.header.logo.title;
@@ -262,6 +264,36 @@ function fillText(text) {
         var followButtons = document.getElementsByClassName('team_button_text');
         for (var _i = 0; _i < followButtons.length; ++_i) {
             followButtons[_i].innerText = text.team.button;
+        }
+    }
+
+    function fillPortfolio(text) {
+        document.getElementById('portfolio_title').innerText = text.portfolio.title;
+        document.getElementById('portfolio_subtitle').innerText = text.portfolio.subtitle;
+        var portfolioSlides = document.getElementsByClassName('portfolio_box');
+        for (var i = 0; i < portfolioSlides.length; ++i) {
+            var portfolioSlideItems = portfolioSlides[i].getElementsByClassName('portfolio_item');
+            for (var j = 0; j < portfolioSlideItems.length; ++j) {
+                portfolioSlideItems[j].childNodes[3].innerText = text.portfolio.box[i][j];
+            }
+        }
+    }
+
+    function fillPricing(text) {
+        document.getElementById('pricing_info').innerText = text.pricing.info;
+        var items = document.getElementsByClassName('pricing_item');
+        var pricingItems = [items[0], document.getElementsByClassName('pricing_item_accent')[0], items[1]];
+        for (var i = 0; i < pricingItems.length; ++i) {
+            pricingItems[i].getElementsByClassName(i == 1 ? 'pricing_title_accent' : 'pricing_title')[0].innerText = text.pricing.box[i].title;
+            pricingItems[i].getElementsByClassName(i == 1 ? 'pricing_subtitle_accent' : 'pricing_subtitle')[0].innerText = text.pricing.box[i].subtitle;
+            var pricingOptions = pricingItems[i].getElementsByClassName('pricing_option');
+            for (var j = 0; j < pricingOptions.length; ++j) {
+                pricingOptions[j].innerText = text.pricing.box[i].options[j];
+            }
+            pricingItems[i].getElementsByClassName('pricing_dollar')[0].innerText = text.pricing.currency;
+            pricingItems[i].getElementsByClassName('pricing_value')[0].innerText = text.pricing.box[i].value;
+            pricingItems[i].getElementsByClassName('pricing_periodicity')[0].innerText = text.pricing.periodicity;
+            pricingItems[i].getElementsByClassName(i == 1 ? 'pricing_button_accent' : 'pricing_button')[0].innerText = text.pricing.button;
         }
     }
 }
