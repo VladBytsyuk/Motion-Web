@@ -1,0 +1,127 @@
+{
+	"title" : "Motion",
+
+	"header" : {
+		"logo" : {
+			"title" : "Motion",
+			"subtitle" : "Asingle Page Template"  
+		},
+		"menu" : [ "Home", "About", "Team",	"Portfolio", "Other", "Contact" ],
+		"slider" : {
+			"title" : "Welcome to Motion",
+			"subtitle" : "Asmart & Creative Single Page Template"
+		}
+	},
+
+	"merits" : {
+		"title" : "Smart & Creative",
+		"subtitle" : "This is why you will use it :)",
+		"box" : [
+			{
+				"title" : "Multi purpose",
+				"subtitle" : "Lorem ipsum dolor sit amet, consectetur adipisicing.."
+			},
+			{
+				"title" : "Flat UI",
+				"subtitle" : "Lorem ipsum dolor sit amet, consectetur adipisicing.."
+			},
+			{
+				"title" : "Creative design",
+				"subtitle" : "Lorem ipsum dolor sit amet, consectetur adipisicing.."
+			}
+		]
+	},
+
+	"team" : {
+		"title" : "Talented & Experts",
+		"subtitle" : "This is our team :)",
+		"box" : [
+			{
+				"name" : "Mahmoud Baghagho",
+				"position" : "Senior UI Designer"
+			},
+			{
+				"name" : "Abd ElRahman",
+				"position" : "Senior App Developer"
+			},
+			{
+				"name" : "Mostafa Amin",
+				"position" : "Senior Graphic Designer"
+			},
+			{
+				"name" : "Ahmed Ali",
+				"position" : "Senior Web Developer"
+			}
+		],
+		"button" : "Follow"
+	},
+
+	"portfolio" : {
+		"title" : "Elegant & Genuine",
+		"subtitle" : "This is how our works looks like :)",
+		"box" : [
+			[ "SMS Clouds", "Blue Apple", "Together", "FC Barcelona"],
+			[ "Angular", "Beoplay H4", "Born Fighters", "Dunkelfeld"],
+			[ "Guardian", "Humaan", "Maemo", "North"],
+			[ "TNW", "Typeform", "UX Pin", "Vimeo"]
+		]
+	},
+
+	"pricing" : {
+		"box" : [
+			{
+				"title" : "Start Up",
+				"subtitle" : "For beginners",
+				"options" : [ "Basic pages", "MySQL Databases", "Bandwidth", "Storage space" ],
+				"value" : "15"
+			},
+			{
+				"title" : "Standart",
+				"subtitle" : "More than what you have dreamed with",
+				"options" : [ "Standart pages", "MySQL Databases", "Bandwidth", "Storage space" ],
+				"value" : "25"
+			},
+			{
+				"title" : "Professional",
+				"subtitle" : "For smart people",
+				"options" : [ "Basic pages", "MySQL Databases", "Bandwidth", "Storage space" ],
+				"value" : "35"
+			}
+		],
+		"currency" : "$",
+		"periodicity" : "/mo",
+		"button" : "Order",
+		"info" : "And more available plans for all needs .... Check here"
+	},
+
+	"tweets" : {
+		"title" : "Latest tweets",
+		"subtitle" : "This is how to keep in touch :)",	
+		"box" : [
+			{
+				"name" : "@Abd-Alrahaman Elgazzar",
+				"text" : "Great work Abd-Alrahaman, I really love the application ... hope you haveall the luck in ur life .. also have alook here",
+				"link" : "http://t.co/zfdgfdg"
+			},
+			{
+				"name" : "@Mahmoud-Baghagho",
+				"text" : "Thank u 4 it! Please don't stop :) I will show it 2 my family, friends and to everyone in this town!",
+				"link" : "http://t.co/dssdds"
+			},
+			{
+				"name" : "@Abd-Alrahaman",
+				"text" : "Hmm...  I think that Motion really comfortable! I can't imagine my life without Motion! This is awesome product!",
+				"link" : "http://t.co/assad"
+			}	
+		]
+	},
+
+	"footer" : {
+		"title" : "Contact Us",
+		"email" : "7oroof@7oroof.com",
+		"adress" : "Your adress goes here",
+		"button" : "Callback",
+		"name" : "Motion Template",
+		"design" : ". Design by Begha"
+	}
+}
