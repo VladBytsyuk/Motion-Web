@@ -1,12 +1,13 @@
-var callback = document.getElementById('callback_btn');
+const callback = document.getElementById('callback_btn');
 
-var callbackAction = new function() {
-    var popup = document.getElementById('popup');
+const callbackAction = new function() {
+    const popup = document.getElementById('popup');
 
-    var nameField = document.getElementById('fname');
-    var phoneField = document.getElementById('fnumber');
-    var adressField = document.getElementById('fadress');
-    var submit = document.getElementById('popup_btn');
+    const nameField = document.getElementById('fname');
+    const phoneField = document.getElementById('fnumber');
+    const adressField = document.getElementById('fadress');
+    const submit = document.getElementById('popup_btn');
+    const infoBlock = document.getElementById('footer_info');
 
     function open() {
         nameField.value = '';
@@ -26,11 +27,11 @@ var callbackAction = new function() {
     }
 
     submit.addEventListener('click', function() {
-        var nameRegEp = /^[a-zA-Z]{2,30}$/;
-        var phoneRegExp = /^[0-9]{7,16}$/;
-        var adressRegExp = /\S+@\S+\.\S+/;
-        var isBreak = false;
-        var userInfo = {
+        const nameRegEp = /^[a-zA-Z]{2,30}$/;
+        const phoneRegExp = /^[0-9]{7,16}$/;
+        const adressRegExp = /\S+@\S+\.\S+/;
+        let isBreak = false;
+        const userInfo = {
             name: nameField.value,
             phone: phoneField.value,
             adress: adressField.value

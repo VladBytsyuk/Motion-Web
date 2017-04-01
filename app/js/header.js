@@ -1,7 +1,7 @@
-var menu = document.getElementById('header_menu');
-var items = menu.getElementsByClassName('navbar_menu_item');
-var header = document.getElementById('header');
-var hamburger = document.getElementById('ham');
+const menu = document.getElementById('header_menu');
+const items = menu.getElementsByClassName('navbar_menu_item');
+const header = document.getElementById('header');
+const hamburger = document.getElementById('ham');
 
 function redrawMenu() {
     showAll();
@@ -9,9 +9,9 @@ function redrawMenu() {
 }
 
 function showAll() {
-    var j;
-    for (j = 1; j < items.length; ++j) {
-        items[items.length - j].style.display = 'block';
+    let j;
+    for (j = 0; j < items.length; ++j) {
+        items[j].style.display = 'block';
     }
 }
 
@@ -41,12 +41,12 @@ function hideUnnecessary() {
 
 redrawMenu();
 
-var hamburgerAction = new function() {
-    var hamPopup = document.getElementById('popup');
-    var headerPopup = document.getElementById('header_popup');
-    var popupItems = headerPopup.getElementsByClassName('popup_item');
-    var isOpen = false;
-    var i;
+const hamburgerAction = new function() {
+    const hamPopup = document.getElementById('popup');
+    const headerPopup = document.getElementById('header_popup');
+    const popupItems = headerPopup.getElementsByClassName('popup_item');
+    let isOpen = false;
+    let i;
 
     function clear() {
         for (i = 0; i < popupItems.length; ++i) {

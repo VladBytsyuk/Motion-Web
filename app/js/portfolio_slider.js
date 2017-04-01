@@ -1,13 +1,13 @@
-var portfolioArrowRight = document.getElementById('portfolio_next');
-var portfolioArrowLeft = document.getElementById('portfolio_prev');
+const portfolioArrowRight = document.getElementById('portfolio_next');
+const portfolioArrowLeft = document.getElementById('portfolio_prev');
 
-var portfolioSlider = new function() {
-    var slider = document.getElementById('portfolio_slider');
-    var slideHolder = document.getElementById('portfolio_holder');
-    var slides = slider.getElementsByClassName('portfolio_box');
-    var pages = document.getElementsByClassName('portfolio_pages_item');
-    var slidesAmount = slides.length;
-    var currentSlide = 0;
+const portfolioSlider = new function() {
+    const slider = document.getElementById('portfolio_slider');
+    const slideHolder = document.getElementById('portfolio_holder');
+    const slides = slider.getElementsByClassName('portfolio_box');
+    const pages = document.getElementsByClassName('portfolio_pages_item');
+    const slidesAmount = slides.length;
+    let currentSlide = 0;
 
     slides[currentSlide].style.opacity = 1;
     pages[currentSlide].classList.add('portfolio_pages_item_highlighted');

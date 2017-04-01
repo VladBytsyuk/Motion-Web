@@ -1,11 +1,11 @@
-var tweetsArrowRight = document.getElementById('tweets_next');
-var tweetsArrowLeft = document.getElementById('tweets_prev');
+const tweetsArrowRight = document.getElementById('tweets_next');
+const tweetsArrowLeft = document.getElementById('tweets_prev');
 
-var tweetsSlider = new function() {
-    var slideHolder = document.getElementById('tweets_hearth');
-    var slides = slideHolder.getElementsByClassName('tweets_hearth_tweet');
-    var slidesAmount = slides.length;
-    var currentSlide = 0;
+const tweetsSlider = new function() {
+    const slideHolder = document.getElementById('tweets_hearth');
+    const slides = slideHolder.getElementsByClassName('tweets_hearth_tweet');
+    const slidesAmount = slides.length;
+    let currentSlide = 0;
     slides[currentSlide].style.opacity = 1;
     init(undefined);
 
