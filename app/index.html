@@ -293,20 +293,17 @@
       </div>
       <!-- ========= TWEETS ========= -->
       <div class="tweets">
-        <div class="tweets_title">Latest tweets</div>
-        <div class="tweets_subtitle">This is how to keep in touch :)</div>
+        <div id="tweets_title" class="tweets_title"></div>
+        <div id="tweets_subtitle" class="tweets_subtitle"></div>
         <i class="sprite sprite-tweet"></i>
         <div class="tweet_slider">
           <div id="tweets_prev" class="tweet_hit_zone">
             <i class="sprite sprite-arrow-left-b"></i>
           </div>
           <div id="tweets_hearth" class="tweets_hearth">
-              <div class="tweets_hearth_tweet">@Abd-Alrahaman Elgazzar <span style="color:white">Great work Abd-Alrahaman, I really love the application ... hope you haveall the luck in ur life .. also have alook here</span> http://t.co/zfdgfdg
-              </div>
-              <div class="tweets_hearth_tweet">@Mahmoud-Baghagho <span style="color:white">Thank u 4 it! Please don't stop :) I will show it 2 my family, friends and to everyone in this town!</span> http://t.co/dssdds
-              </div>
-              <div class="tweets_hearth_tweet">@Abd-Alrahaman <span style="color:white">Hmm...  I think that Motion really comfortable! I can't imagine my life without Motion! This is awesome product!</span> http://t.co/assad
-              </div>
+              <div class="tweets_hearth_tweet"></div>
+              <div class="tweets_hearth_tweet"></div>
+              <div class="tweets_hearth_tweet"></div>
           </div>
           <div id="tweets_next" class="tweet_hit_zone">
             <i class="sprite sprite-arrow-right-b"></i>
@@ -318,11 +315,7 @@
         <div class="footer_box">
           <div class="footer_copy">
             <div class="footer_item">
-              <div class="footer_text">
-                &#169;2013
-                <span style="color: #eb4f4e">Motion Template</span>.
-                Design by Begha
-              </div>
+              <div id="footer_text" class="footer_text"></div>
             </div>
             <div class="footer_item">
               <i class="sprite sprite-facebook"></i>
@@ -332,15 +325,15 @@
           </div>
         </div>  
         <div id="footer_info" class="footer_info">
-          <div class="footer_title">Contact Us</div>
-          <div class="footer_info_text">7oroof@7oroof.com</div>
-          <div class="footer_info_text">Your adress goes here</div>
-          <button id="callback_btn" class="footer_callback_btn">Callback</button>
+          <div id="footer_title" class="footer_title"></div>
+          <div id="footer_email" class="footer_info_text"></div>
+          <div id="footer_adress" class="footer_info_text"></div>
+          <button id="callback_btn" class="footer_callback_btn"></button>
           <div id="popup" class="footer_callback_content">
-            <input type="text" id="fname" class="popup_input" name="fname" required placeholder="Name (Alex)...">
-            <input type="text" id="fnumber" class="popup_input" name="fnumber" required placeholder="Phone number (89001020300)...">
-            <input type="text" id="fadress" class="popup_input" name="fadress" required placeholder="E-mail (adress@smth.com)...">
-            <button id="popup_btn" class="popup_btn">Submit</button>
+            <input type="text" id="fname" class="popup_input" name="fname" required>
+            <input type="text" id="fnumber" class="popup_input" name="fnumber" required>
+            <input type="text" id="fadress" class="popup_input" name="fadress" required>
+            <button id="popup_btn" class="popup_btn"></button>
           </div>
         </div>
       </div>

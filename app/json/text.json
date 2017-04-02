@@ -121,7 +121,12 @@
 		"email" : "7oroof@7oroof.com",
 		"adress" : "Your adress goes here",
 		"button" : "Callback",
+		"submit" : "Submit",
 		"name" : "Motion Template",
-		"design" : ". Design by Begha"
+		"design" : ". Design by Begha",
+		"year" : "&#169;2013",
+		"name_placeholder" : "Name (Alex)...",
+		"phone_placeholder" : "Phone (89001020300)...",
+		"adress_placeholder" : "E-mail (adress@smth.com)..."
 	}
 }

@@ -26,6 +26,8 @@ function fillText(text) {
 	fillTeam(text);
 	fillPortfolio(text);
 	fillPricing(text);
+	fillTweets(text);
+	fillFooter(text);
 	
 	function fillHeader(text) {
 		document.getElementById('logo_title').innerText = text.header.logo.title;
@@ -103,6 +105,32 @@ function fillText(text) {
 					.getElementsByClassName(i == 1 ? 'pricing_button_accent' : 'pricing_button')[0]
 					.innerText = text.pricing.button;				
 		}
+	}
+
+	function fillTweets(text) {
+		document.getElementById('tweets_title').innerText = text.tweets.title;
+		document.getElementById('tweets_subtitle').innerText = text.tweets.subtitle;
+		const tweetSlides = document.getElementsByClassName('tweets_hearth_tweet');
+		for(let i = 0; i < tweetSlides.length; ++i) {
+			tweetSlides[i].innerHTML = text.tweets.box[i].name + 
+					' <span style="color:white">' + text.tweets.box[i].text + '</span> ' +
+					text.tweets.box[i].link;
+		}
+	}
+
+	function fillFooter(text) {
+		document.getElementById('footer_text').innerHTML =
+			text.footer.year + 
+			' <span style="color: #eb4f4e">' + text.footer.name + '</span>' + 
+			text.footer.design;
+		document.getElementById('footer_title').innerText = text.footer.title;
+		document.getElementById('footer_email').innerText = text.footer.email;
+		document.getElementById('footer_adress').innerText = text.footer.adress;
+		document.getElementById('callback_btn').innerText = text.footer.button;
+		document.getElementById('popup_btn').innerText = text.footer.submit;
+		document.getElementById('fname').placeholder = text.footer.name_placeholder;
+		document.getElementById('fnumber').placeholder = text.footer.phone_placeholder;
+		document.getElementById('fadress').placeholder = text.footer.adress_placeholder;
 		
 	}
 }
