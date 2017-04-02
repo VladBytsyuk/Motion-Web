@@ -21,6 +21,7 @@ const textGetter = new function() {
 const textObject = textGetter.getJSONText();
 
 function fillText(text) {
+	document.title = text.title;
 	fillHeader(text);
 	fillMerits(text);
 	fillTeam(text);
@@ -131,7 +132,6 @@ function fillText(text) {
 		document.getElementById('fname').placeholder = text.footer.name_placeholder;
 		document.getElementById('fnumber').placeholder = text.footer.phone_placeholder;
 		document.getElementById('fadress').placeholder = text.footer.adress_placeholder;
-		
 	}
 }
 

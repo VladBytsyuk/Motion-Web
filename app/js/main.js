@@ -226,6 +226,7 @@ var textGetter = new function () {
 var textObject = textGetter.getJSONText();
 
 function fillText(text) {
+    document.title = text.title;
     fillHeader(text);
     fillMerits(text);
     fillTeam(text);
