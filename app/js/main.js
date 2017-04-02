@@ -206,7 +206,7 @@ window.onresize = function () {
 var textGetter = new function () {
 
     var textRequest = new XMLHttpRequest();
-    textRequest.open('GET', '/json/text.json', false);
+    textRequest.open('GET', 'json/text.json', false);
     textRequest.send(null);
 
     function getJSONText() {
@@ -222,8 +222,6 @@ var textGetter = new function () {
         getJSONText: getJSONText
     };
 }();
-
-var textObject = textGetter.getJSONText();
 
 function fillText(text) {
     document.title = text.title;
@@ -241,6 +239,10 @@ function fillText(text) {
         var menuItems = document.getElementsByClassName('navbar_menu_item');
         for (var i = 0; i < menuItems.length; ++i) {
             menuItems[i].innerText = text.header.menu[i];
+        }
+        var popupItems = document.getElementsByClassName('popup_item');
+        for (var _i = 0; _i < popupItems.length; ++_i) {
+            popupItems[_i].innerText = text.header.menu[_i];
         }
         document.getElementById('slider_title').innerText = text.header.slider.title;
         document.getElementById('slider_subtitle').innerText = text.header.slider.subtitle;
@@ -265,8 +267,8 @@ function fillText(text) {
             teamItems[i].childNodes[5].innerText = text.team.box[i].position;
         }
         var followButtons = document.getElementsByClassName('team_button_text');
-        for (var _i = 0; _i < followButtons.length; ++_i) {
-            followButtons[_i].innerText = text.team.button;
+        for (var _i2 = 0; _i2 < followButtons.length; ++_i2) {
+            followButtons[_i2].innerText = text.team.button;
         }
     }
 
@@ -322,7 +324,7 @@ function fillText(text) {
     }
 }
 
-fillText(textObject);
+fillText(textGetter.getJSONText());
 var tweetsArrowRight = document.getElementById('tweets_next');
 var tweetsArrowLeft = document.getElementById('tweets_prev');
 

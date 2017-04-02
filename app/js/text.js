@@ -1,7 +1,7 @@
 const textGetter = new function() {
 
 	const textRequest = new XMLHttpRequest;
-	textRequest.open('GET', '/json/text.json', false);
+	textRequest.open('GET', 'json/text.json', false);
 	textRequest.send(null);
 
 	function getJSONText() {
@@ -17,8 +17,6 @@ const textGetter = new function() {
 		getJSONText: getJSONText
 	}
 }
-
-const textObject = textGetter.getJSONText();
 
 function fillText(text) {
 	document.title = text.title;
@@ -36,6 +34,10 @@ function fillText(text) {
 		const menuItems = document.getElementsByClassName('navbar_menu_item');
 		for(let i = 0; i < menuItems.length; ++i) {
 			menuItems[i].innerText = text.header.menu[i];
+		}
+		const popupItems = document.getElementsByClassName('popup_item');
+		for(let i = 0; i < popupItems.length; ++i) {
+			popupItems[i].innerText = text.header.menu[i];
 		}
 		document.getElementById('slider_title').innerText = text.header.slider.title;
 		document.getElementById('slider_subtitle').innerText = text.header.slider.subtitle;
@@ -135,4 +137,4 @@ function fillText(text) {
 	}
 }
 
-fillText(textObject);
+fillText(textGetter.getJSONText());

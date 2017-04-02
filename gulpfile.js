@@ -129,4 +129,8 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
     //Build Htmls
     gulp.src('app/*html')
             .pipe(gulp.dest('dist'));
+
+    //Build JSON
+    gulp.src('app/json/**/*.json')
+            .pipe(gulp.dest('dist/json'));
 });
