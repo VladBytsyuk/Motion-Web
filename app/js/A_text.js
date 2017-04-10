@@ -1,21 +1,22 @@
-const textGetter = new function() {
+function textGetter() {
+	return new Promise(function(resolve, reject) {
+	    var textRequest = new XMLHttpRequest();
+	    textRequest.open('GET', 'json/text.json', false);
 
-	const textRequest = new XMLHttpRequest;
-	textRequest.open('GET', 'json/text.json', false);
-	textRequest.send(null);
+	    textRequest.onload = function() {
+	      	if (this.status == 200) {
+			    resolve(JSON.parse(textRequest.responseText));
+	      	} else {
+				reject('ERROR: Request code of \"text.json\" isn\'t 200 (' + textRequest.status + ')');
+	      	}
+	    };
 
-	function getJSONText() {
-		if (textRequest.status == 200) {  
-		    return JSON.parse(textRequest.responseText);
-		} else {
-			console.log('ERROR: Request code of \"text.json\" isn\'t 200 (' + textRequest.status + ')');
-		}
-		return null;
-	}
+	    textRequest.onerror = function() {
+	    	reject(new Error("Network Error"));
+	    };
 
-	return {
-		getJSONText: getJSONText
-	}
+	    textRequest.send(null);
+	});
 }
 
 function fillText(text) {
@@ -137,4 +138,8 @@ function fillText(text) {
 	}
 }
 
-fillText(textGetter.getJSONText());
+textGetter().then(
+	json => fillText(json),
+	error => document.getElementById('slider_title').innerText = error
+);
+

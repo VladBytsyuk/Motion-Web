@@ -11,8 +11,10 @@ var gulp            = require('gulp'),
     cache           = require('gulp-cache'),
     autoprefixer    = require('gulp-autoprefixer'),
     eslint          = require('gulp-eslint'),
-    babel           = require('gulp-babel');
-    // mocha           = require('gulp-mocha');
+    babel           = require('gulp-babel'),
+    rename          = require('gulp-rename'),
+    inject          = require('gulp-inject-string'),
+    mocha           = require('gulp-mocha');
 
 
 gulp.task('default', ['watch']);
@@ -46,14 +48,14 @@ gulp.task('css-libs', ['sass'], function() {
             .pipe(gulp.dest('app/css'));
 });
 
-gulp.task('js-test', function() {
-    return gulp.src('app/js/**/*-test.js')
-            .pipe(mocha({
-              reporter: 'spec',
-              globals: {
-                should: require('should')
-              }
-            }));
+gulp.task('js-test',  function() {
+    return gulp.src('app/index.html')
+            .pipe(inject.before('</head>', 
+                '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script><script>mocha.setup(\'bdd\');</script><script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script><script>var assert = chai.assert;</script>'))
+            .pipe(inject.after('<script type="text/javascript" src="js/main.js"></script>', 
+                '<script src="js/Z_test.js"></script><div id="mocha"></div><script>mocha.run();</script>'))
+            .pipe(rename('index_test.html'))
+            .pipe(gulp.dest('app'));
 });
 
 gulp.task('scripts', ['js-concat'], function() {
@@ -72,7 +74,7 @@ gulp.task('js-clean', function() {
 });
 
 gulp.task('js-concat', ['js-clean'], function() {
-    return gulp.src('app/js/**/*.js')
+    return gulp.src(['app/js/**/*.js', '!app/js/**/Z_test.js'])
             .pipe(concat('main.js'))
             .pipe(babel())
             .pipe(gulp.dest('app/js'));

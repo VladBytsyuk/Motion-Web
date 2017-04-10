@@ -41,7 +41,7 @@ function hideUnnecessary() {
 
 redrawMenu();
 
-const hamburgerAction = new function() {
+var hamburgerAction = new function() {
     const hamPopup = document.getElementById('popup');
     const headerPopup = document.getElementById('header_popup');
     const popupItems = headerPopup.getElementsByClassName('popup_item');
@@ -77,6 +77,7 @@ const hamburgerAction = new function() {
 
     return {
         click : click,
+        isOpen : isOpen,
         close: close
     }
 };

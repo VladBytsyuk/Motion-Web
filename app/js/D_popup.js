@@ -60,7 +60,13 @@ const callbackAction = new function() {
     });
 
     return {
-        open : open
+        open : open,
+        close: close,
+        nameField: nameField.value,
+        phoneField: phoneField.value,
+        adressField: adressField.value,
+        visibility: popup.style.visibility,
+        opacity: popup.style.opacity
     }
 };
 
