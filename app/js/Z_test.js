@@ -3,7 +3,7 @@ describe("hamburger", function() {
   it("click-state", function() {
   	const previousState = hamburgerAction.isOpen;
   	hamburgerAction.click();
-    assert.equal(previousState, hamburgerAction.isOpen);
+    assert.equal(previousState, !hamburgerAction.isOpen);
   });
 
 });
@@ -53,13 +53,11 @@ describe("callback-form", function() {
     assert.equal(callbackAction.nameField, '');
     assert.equal(callbackAction.phoneField, '');
     assert.equal(callbackAction.adressField, '');
-    assert.equal(callbackAction.visibility, 'visible');
     assert.equal(callbackAction.opacity, 1);
   });
 
   it("close", function() {
     callbackAction.close();
-    assert.equal(callbackAction.visibility, 'hidden');
     assert.equal(callbackAction.opacity, 0);
   });
 
