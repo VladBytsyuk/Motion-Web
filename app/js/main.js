@@ -371,14 +371,17 @@ var tweetsSlider = new function () {
 
 tweetsArrowRight.addEventListener('click', tweetsSlider.nextSlide);
 tweetsArrowLeft.addEventListener('click', tweetsSlider.prevSlide);
-portfolioSlider.init();
-tweetsSlider.init();
-redrawMenu();
-hamburgerAction.close();
-
-window.onresize = function () {
+var update = function update() {
     portfolioSlider.init();
     tweetsSlider.init();
     redrawMenu();
     hamburgerAction.close();
+};
+
+window.onload = function () {
+    return update();
+};
+
+window.onresize = function () {
+    return update();
 };

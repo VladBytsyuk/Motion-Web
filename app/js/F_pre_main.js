@@ -1,11 +1,10 @@
-portfolioSlider.init();
-tweetsSlider.init();
-redrawMenu();
-hamburgerAction.close();
-
-window.onresize = () => {
-    portfolioSlider.init();
-    tweetsSlider.init();
-    redrawMenu();
-    hamburgerAction.close();
+const update = () => {
+	portfolioSlider.init();
+	tweetsSlider.init();
+	redrawMenu();
+	hamburgerAction.close();
 }
+
+window.onload = () => update();
+
+window.onresize = () => update();
