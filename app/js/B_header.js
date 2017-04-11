@@ -77,7 +77,6 @@ var hamburgerAction = new function() {
 
     return {
         click : click,
-        isOpen : isOpen,
         close: close
     }
 };

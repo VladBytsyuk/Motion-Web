@@ -64,9 +64,7 @@ const callbackAction = new function() {
         close: close,
         nameField: nameField.value,
         phoneField: phoneField.value,
-        adressField: adressField.value,
-        visibility: popup.style.visibility,
-        opacity: popup.style.opacity
+        adressField: adressField.value
     }
 };
 

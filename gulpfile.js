@@ -51,7 +51,7 @@ gulp.task('css-libs', ['sass'], function() {
 gulp.task('js-test',  function() {
     return gulp.src('app/index.html')
             .pipe(inject.before('</head>', 
-                '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script><script>mocha.setup(\'bdd\');</script><script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script><script>var assert = chai.assert;</script>'))
+                '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script><script>mocha.setup(\'bdd\');</script><script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script><script>var assert = chai.assert;var expect = char.expect;</script>'))
             .pipe(inject.after('<script type="text/javascript" src="js/main.js"></script>', 
                 '<script src="js/Z_test.js"></script><div id="mocha"></div><script>mocha.run();</script>'))
             .pipe(rename('index_test.html'))

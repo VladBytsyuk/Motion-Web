@@ -38,7 +38,6 @@ const portfolioSlider = new function() {
 
     return {
         init: init,
-        currentSlide: currentSlide,
         nextSlide: nextSlide,
         prevSlide: prevSlide
     }

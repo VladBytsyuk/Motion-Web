@@ -207,7 +207,6 @@ var hamburgerAction = new function () {
 
     return {
         click: click,
-        isOpen: isOpen,
         close: close
     };
 }();
@@ -252,7 +251,6 @@ var portfolioSlider = new function () {
 
     return {
         init: init,
-        currentSlide: currentSlide,
         nextSlide: nextSlide,
         prevSlide: prevSlide
     };
@@ -326,9 +324,7 @@ var callbackAction = new function () {
         close: close,
         nameField: nameField.value,
         phoneField: phoneField.value,
-        adressField: adressField.value,
-        visibility: popup.style.visibility,
-        opacity: popup.style.opacity
+        adressField: adressField.value
     };
 }();
 
@@ -363,7 +359,6 @@ var tweetsSlider = new function () {
 
     return {
         init: init,
-        currentSlide: currentSlide,
         nextSlide: nextSlide,
         prevSlide: prevSlide
     };
