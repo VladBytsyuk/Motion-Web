@@ -17,7 +17,7 @@ function textGetter() {
             reject(new Error("Network Error"));
         };
 
-        textRequest.send(null);
+        textRequest.send('GET');
     });
 }
 
@@ -207,6 +207,7 @@ var hamburgerAction = new function () {
 
     return {
         click: click,
+        isOpen: isOpen,
         close: close
     };
 }();
@@ -252,7 +253,9 @@ var portfolioSlider = new function () {
     return {
         init: init,
         nextSlide: nextSlide,
-        prevSlide: prevSlide
+        prevSlide: prevSlide,
+        currentSlide: currentSlide,
+        slidesAmount: slidesAmount
     };
 }();
 
@@ -360,7 +363,9 @@ var tweetsSlider = new function () {
     return {
         init: init,
         nextSlide: nextSlide,
-        prevSlide: prevSlide
+        prevSlide: prevSlide,
+        currentSlide: currentSlide,
+        slidesAmount: slidesAmount
     };
 }();
 

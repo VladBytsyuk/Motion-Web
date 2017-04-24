@@ -29,7 +29,9 @@ const tweetsSlider = new function() {
     return {
         init: init,
         nextSlide: nextSlide,
-        prevSlide: prevSlide
+        prevSlide: prevSlide,
+        currentSlide: currentSlide,
+        slidesAmount: slidesAmount
     }
 };
 

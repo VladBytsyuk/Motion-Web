@@ -15,7 +15,7 @@ function textGetter() {
 	    	reject(new Error("Network Error"));
 	    };
 
-	    textRequest.send(null);
+	    textRequest.send('GET');
 	});
 }
 

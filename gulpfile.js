@@ -51,7 +51,7 @@ gulp.task('css-libs', ['sass'], function() {
 gulp.task('js-test',  function() {
     return gulp.src('app/index.html')
             .pipe(inject.before('</head>', 
-                '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script><script>mocha.setup(\'bdd\');</script><script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script><script>var assert = chai.assert;var expect = char.expect;</script>'))
+                '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script><script>mocha.setup(\'bdd\');</script><script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script><script>var assert = chai.assert;var expect = chai.expect;</script>'))
             .pipe(inject.after('<script type="text/javascript" src="js/main.js"></script>', 
                 '<script src="js/Z_test.js"></script><div id="mocha"></div><script>mocha.run();</script>'))
             .pipe(rename('index_test.html'))
@@ -60,6 +60,7 @@ gulp.task('js-test',  function() {
 
 gulp.task('scripts', ['js-concat'], function() {
     return gulp.src([
+                'app/libs/angular/angular.min.js',
                 'app/libs/jquery/dist/jquery.min.js',
                 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
             ])
