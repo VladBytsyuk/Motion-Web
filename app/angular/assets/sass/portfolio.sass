@@ -1,0 +1,142 @@
+$background: #ececec
+$bottom_line: #cacaca
+$text_green: #61af66
+$text_gray: #616161
+$text_black: #232324
+
+/* ==== PORTFOLIO ==== */
+
+.portfolio
+	padding: 20px
+	padding-bottom: 160px
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: center
+	border-bottom: 1px solid $bottom_line
+	background-color: $background
+
+.portfolio_top
+	padding: 40px
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: center
+
+.portfolio_top_title
+	padding: 20px
+	font-size: 40pt
+	font-weight: bold
+	letter-spacing: 5px
+	color: $text_gray
+
+.portfolio_top_subtitle
+	font-size: 20pt
+	color: $text_green
+
+.portfolio_slider
+	width: 100%
+	display: flex
+	justify-content: space-around
+	flex: nowrap
+	align-items: center
+
+.portfolio_holder
+	width: 75%	
+
+.portfolio_box
+	width: 70%
+	position: absolute
+	padding-left: 20px
+	padding-right: 20px
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	flex-direction: row
+	align-items: center
+	opacity: 0
+	transition: opacity 1s
+
+.portfolio_item
+	display: flex
+	margin: 8px
+	padding: 8px
+	justify-content: center
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: center
+	flex-grow: 1
+
+.portfolio_name
+	padding-top: 16px
+	font-size: 21pt
+	white-space: nowrap
+	color: $text_black
+
+.portfolio_pages
+	width: 100px
+	margin: 16px
+	display: flex
+	justify-content: space-around
+	flex-wrap: nowrap
+	flex-direction: row
+	align-items: center
+
+.portfolio_pages_item
+	width: 10px
+	height: 10px
+	border-radius: 50%
+	font-size: 0px
+	background-color: $text_gray
+
+.portfolio_pages_item_highlighted
+	width: 10px
+	height: 10px
+	border-radius: 50%
+	font-size: 0px
+	background-color: $text_green
+
+.portfolio_hit_zone
+	padding: 30px
+
+.portfolio_image
+	border-radius: 8px
+
+@media(max-width: 800px)
+	.portfolio_box
+		padding-left: 0px
+		padding-right: 0px
+	.portfolio_image
+		width: 150px
+	.portfolio_hit_zone
+		padding: 25px
+
+@media(max-width: 600px)
+	.portfolio_box
+		padding-left: 0px
+		padding-right: 0px
+	.portfolio_image
+		width: 100px
+	.portfolio_hit_zone
+		padding: 20px
+
+@media(max-width: 500px)
+	.portfolio_box
+		padding-left: 0px
+		padding-right: 0px
+	.portfolio_image
+		width: 80px
+	.portfolio_hit_zone
+		padding: 15px
+
+@media(max-width: 420px)
+	.portfolio_top_title
+		font-size: 25pt
+	.portfolio_top_subtitle
+		font-size: 16pt
+	.portfolio_name
+		font-size: 15pt
+	.portfolio_hit_zone
+		padding: 10px

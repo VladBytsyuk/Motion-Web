@@ -1,0 +1,84 @@
+$background: #232324
+$text_orange: #d94948
+
+/* ==== MERITS ====*/
+
+.merits
+	margin-top: -150px
+	padding: 20px
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: center
+	background-color: $background
+
+@media(max-width: 1440px)
+	.merits
+		margin-top: -100px
+
+@media(max-width: 1080px)
+	.merits
+		margin-top: -75px
+
+@media(max-width: 760px)
+	.merits
+		margin-top: -50px
+
+.merits_top
+	padding: 40px
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: center
+
+.merits_top_title
+	padding: 20px
+	font-size: 40pt
+	font-weight: bold
+	letter-spacing: 5px
+	color: white
+
+.merits_top_subtitle
+	width: 100%
+	font-size: 20pt
+	color: $text_orange
+	white-space: pre-wrap
+
+.merits_box
+	width: 75%
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	flex-direction: row
+	align-items: center
+
+.merits_box_item
+	width: 25%
+	padding-left: 40px
+	padding-right: 40px
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: center
+
+.merits_box_item_title
+	padding-top: 10px
+	font-size: 30pt
+	color: white
+
+.merits_box_item_subtitle
+	font-size: 18pt
+	color: $text_orange
+
+@media(max-width: 420px)
+	.merits_top_title
+		font-size: 25pt
+	.merits_top_subtitle
+		font-size: 16pt
+	.merits_box_item_title
+		font-size: 20pt
+	.merits_box_item_subtitle
+		font-size: 14pt

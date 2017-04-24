@@ -1,0 +1,162 @@
+$background: #eb4f4e
+$top_background: #f56262
+
+/* ==== HEADER ==== */
+.header
+	color: white
+
+.navbar
+	width: 100%
+	display: flex
+	justify-content: space-around
+	flex-wrap: nowrap
+	background-color: $background
+
+.navbar_items
+	width: 100%
+	disp
+
+.navbar_top
+	padding-top: 20px
+	padding-bottom: 20px
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	flex-grow: 500
+	background-color: $top_background
+
+
+/* LOGO */
+
+.logo
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	flex-direction: column
+
+.logo_title
+	display: flex
+	justify-conytent: space-around
+	align-items: flex-end
+	flex: wrap
+	font-size: 35pt
+
+.logo_subtitle
+	font-size: 17pt
+
+
+
+/* MENU */
+
+.navbar_menu
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: center
+	-webkit-align-items: center
+	-webkit-justify-content: center
+	font-size: 16pt
+	font-weight: bold
+
+.navbar_menu_item_highlighted
+	padding-top: 5px
+	padding-right: 15px
+	padding-bottom: 5px
+	padding-left: 15px
+	margin-right: 25px
+	border-radius: 4px
+	background-color: black
+
+.navbar_menu_item
+	padding: 5px
+	padding-left: 20px
+	padding-right: 20px
+	&:hover
+		background-color: #232324
+		border-radius: 4px
+		border-color: #232324
+
+
+
+
+/* CORNER */
+
+.corner
+	float: right
+	background-color: $top_background
+
+.corner_image
+	width: 100%
+
+@media(max-width: 460px)
+	.corner
+		display: none
+
+
+/* SLIDER */
+
+.slider
+	padding: 40px
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: center
+	font-weight: bold
+	background-color: $background
+
+.slider_title
+	font-size: 60pt
+	letter-spacing: 10px
+
+.slider_subtitle
+	padding: 40px
+	font-size: 20pt
+
+.slider_image
+	width: 75%
+
+.header_popup
+	display: flex
+	position: absolute
+	margin-left: -60px
+	ustify-content: center
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: stretch
+	background-color: #f9f9f9
+	z-index: 1
+	opacity: 0
+	visibility: hidden
+	transition: visibility 1s, opacity 1s
+	background-color: #232324
+	border-radius: 4px
+    border-color: #232324
+
+.popup_item
+	padding: 5px
+	padding-left: 20px
+	padding-right: 20px
+	&:hover
+		background-color: #454546
+		border-radius: 4px
+		border-color: #454546
+
+.header_hit_zone
+	padding: 10px
+	margin-top: -5px
+	position: relative
+	display: inline-block
+	margin-left: 20px
+
+@media(max-width: 420px)
+	.logo_title
+		font-size: 20pt
+	.logo_subtitle
+		font-size: 14pt
+	.navbar_menu
+		font-size: 12pt
+	.slider_title
+		font-size: 40pt
+	.slider_subtitle
+		font-size: 15pt

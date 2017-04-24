@@ -1,0 +1,65 @@
+$background: #eb4f4e
+
+/* ==== TWEETS ==== */
+
+.tweets
+	margin-top: -250px
+	display: flex
+	justify-content: center
+	flex-direction: column
+	flex-wrap: nowrap
+	align-items: center
+	background-color: $background
+
+.tweet_slider
+	width: 85%
+	display: flex
+	justify-content: center
+	flex-wrap: nowrap
+	align-items: center
+
+.tweets_hearth
+	width: 95%
+	padding-top: 40px
+	padding-bottom: 40px
+	padding-left: 20px
+	padding-right: 20px
+	text-align: left
+
+.tweets_title
+	font-size: 40pt
+	letter-spacing: 10px
+	font-weight: bold
+	padding-top: 40px
+	padding-bottom: 40px
+	color: white
+
+.tweets_subtitle
+	padding-bottom: 20px
+	font-size: 20pt
+	color: black
+
+.tweets_hearth_tweet
+	width: 60%
+	position: absolute
+	font-size: 20pt
+	font-family: 'bariol-italic', 'bariol'
+	color: black
+	opacity: 0
+	transition: opacity 1s
+
+.tweet_hit_zone
+	padding: 30px
+
+@media(max-width: 520px)
+	.tweets_title
+		font-size: 20pt
+	.tweets_subtitle
+		font-size: 16pt
+	.tweets_hearth_tweet
+		font-size: 14pt
+	.tweet_hit_zone
+		padding: 10px
+	.tweets_title
+		padding-top: 20px
+		padding-bottom: 20px
