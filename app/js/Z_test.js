@@ -1,6 +1,12 @@
 describe("hamburger", function() {
 
   it("click-state", function() {
+    if (window.innerWidth < 1000) {
+      const prevState = hamburgerAction.isOpen;
+      hamburgerAction.click();
+      const state = hamburgerAction.isOpen;
+      assert.equal(prevState, state);
+    }
   });
 
 });
@@ -9,9 +15,17 @@ describe("hamburger", function() {
 describe("slider-portfolio", function() {
 
   it("click-forward", function() {
+      const prevState = portfolioSlider.currentSlide;
+      portfolioSlider.nextSlide();
+      const state = portfolioSlider.currentSlide;
+      assert.equal(prevState, state);
   });
 
   it("click-backward", function() {
+      const prevState = portfolioSlider.currentSlide;
+      portfolioSlider.prevSlide();
+      const state = portfolioSlider.currentSlide;
+      assert.equal(prevState, state);
   });
 
 });
@@ -20,9 +34,17 @@ describe("slider-portfolio", function() {
 describe("slider-tweets", function() {
  
   it("click-forward", function() {
+      const prevState = tweetsSlider.currentSlide;
+      tweetsSlider.nextSlide();
+      const state = tweetsSlider.currentSlide;
+      assert.equal(prevState, state);
   });
 
   it("click-backward", function() {
+      const prevState = tweetsSlider.currentSlide;
+      tweetsSlider.prevSlide();
+      const state = tweetsSlider.currentSlide;
+      assert.equal(prevState, state);
   });
 
 });
