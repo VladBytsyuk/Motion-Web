@@ -4,48 +4,82 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var app = angular.module('motionApp', []);
 
+app.controller('controller', ['$scope', function ($scope) {
+    textGetter().then(function (json) {
+        return $scope.text = json;
+    }, function (error) {
+        return console.log(error);
+    });
+}]);
+
 app.directive('header', function () {
     return {
         restrict: 'E',
         templateUrl: 'app/components/header/header.html'
     };
 });
+
 app.directive('merits', function () {
     return {
         restrict: 'E',
         templateUrl: 'app/components/merits/merits.html'
     };
 });
+
 app.directive('team', function () {
     return {
         restrict: 'E',
         templateUrl: 'app/components/team/team.html'
     };
 });
+
 app.directive('portfolio', function () {
     return {
         restrict: 'E',
-        templateUrl: 'app/components/portfolio/portfolio.html'
+        templateUrl: 'app/components/portfolio/porfolio.html'
     };
 });
+
 app.directive('pricing', function () {
     return {
         restrict: 'E',
         templateUrl: 'app/components/pricing/pricing.html'
     };
 });
+
 app.directive('tweets', function () {
     return {
         restrict: 'E',
         templateUrl: 'app/components/tweets/tweets.html'
     };
 });
+
 app.directive('footer', function () {
     return {
         restrict: 'E',
         templateUrl: 'app/components/footer/footer.html'
     };
 });
+function textGetter() {
+    return new Promise(function (resolve, reject) {
+        var textRequest = new XMLHttpRequest();
+        textRequest.open('GET', 'assets/json/text.json', false);
+
+        textRequest.onload = function () {
+            if (this.status == 200) {
+                resolve(JSON.parse(textRequest.responseText));
+            } else {
+                reject('ERROR: Request code of \"text.json\" isn\'t 200 (' + textRequest.status + ')');
+            }
+        };
+
+        textRequest.onerror = function () {
+            reject(new Error("Network Error"));
+        };
+
+        textRequest.send('GET');
+    });
+}
 /*
  AngularJS v1.5.6
  (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -4429,77 +4463,6 @@ app.directive('footer', function () {
     }));
 })(window);!window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 //# sourceMappingURL=angular.min.js.map
-var callback = document.getElementById('callback_btn');
-
-var callbackAction = new function () {
-    var popup = document.getElementById('popup');
-
-    var nameField = document.getElementById('fname');
-    var phoneField = document.getElementById('fnumber');
-    var adressField = document.getElementById('fadress');
-    var submit = document.getElementById('popup_btn');
-    var infoBlock = document.getElementById('footer_info');
-
-    function open() {
-        nameField.value = '';
-        phoneField.value = '';
-        adressField.value = '';
-        popup.style.visibility = 'visible';
-        popup.style.opacity = 1;
-    }
-
-    function close() {
-        popup.style.visibility = 'hidden';
-        popup.style.opacity = 0;
-    }
-
-    function send(userInfo) {
-        close();
-    }
-
-    submit.addEventListener('click', function () {
-        var nameRegEp = /^[a-zA-Z]{2,30}$/;
-        var phoneRegExp = /^[0-9]{7,16}$/;
-        var adressRegExp = /\S+@\S+\.\S+/;
-        var isBreak = false;
-        var userInfo = {
-            name: nameField.value,
-            phone: phoneField.value,
-            adress: adressField.value
-        };
-        nameField.style.borderColor = '#232324';
-        phoneField.style.borderColor = '#232324';
-        adressField.style.borderColor = '#232324';
-
-        if (nameField.value === '' || !nameField.value.match(nameRegEp)) {
-            nameField.style.borderColor = '#eb4f4e';
-            isBreak = true;
-        }
-        if (phoneField.value === '' || !phoneField.value.match(phoneRegExp)) {
-            phoneField.style.borderColor = '#eb4f4e';
-            isBreak = true;
-        }
-        if (adressField.value === '' || !adressField.value.match(adressRegExp)) {
-            adressField.style.borderColor = '#eb4f4e';
-            isBreak = true;
-        }
-        if (isBreak) {
-            return;
-        }
-
-        send(userInfo);
-    });
-
-    return {
-        open: open,
-        close: close,
-        nameField: nameField.value,
-        phoneField: phoneField.value,
-        adressField: adressField.value
-    };
-}();
-
-callback.addEventListener('click', callbackAction.open);
 var menu = document.getElementById('header_menu');
 var items = menu.getElementsByClassName('navbar_menu_item');
 var header = document.getElementById('header');
@@ -4585,6 +4548,77 @@ var hamburgerAction = new function () {
 }();
 
 hamburger.addEventListener('click', hamburgerAction.click);
+var callback = document.getElementById('callback_btn');
+
+var callbackAction = new function () {
+    var popup = document.getElementById('popup');
+
+    var nameField = document.getElementById('fname');
+    var phoneField = document.getElementById('fnumber');
+    var adressField = document.getElementById('fadress');
+    var submit = document.getElementById('popup_btn');
+    var infoBlock = document.getElementById('footer_info');
+
+    function open() {
+        nameField.value = '';
+        phoneField.value = '';
+        adressField.value = '';
+        popup.style.visibility = 'visible';
+        popup.style.opacity = 1;
+    }
+
+    function close() {
+        popup.style.visibility = 'hidden';
+        popup.style.opacity = 0;
+    }
+
+    function send(userInfo) {
+        close();
+    }
+
+    submit.addEventListener('click', function () {
+        var nameRegEp = /^[a-zA-Z]{2,30}$/;
+        var phoneRegExp = /^[0-9]{7,16}$/;
+        var adressRegExp = /\S+@\S+\.\S+/;
+        var isBreak = false;
+        var userInfo = {
+            name: nameField.value,
+            phone: phoneField.value,
+            adress: adressField.value
+        };
+        nameField.style.borderColor = '#232324';
+        phoneField.style.borderColor = '#232324';
+        adressField.style.borderColor = '#232324';
+
+        if (nameField.value === '' || !nameField.value.match(nameRegEp)) {
+            nameField.style.borderColor = '#eb4f4e';
+            isBreak = true;
+        }
+        if (phoneField.value === '' || !phoneField.value.match(phoneRegExp)) {
+            phoneField.style.borderColor = '#eb4f4e';
+            isBreak = true;
+        }
+        if (adressField.value === '' || !adressField.value.match(adressRegExp)) {
+            adressField.style.borderColor = '#eb4f4e';
+            isBreak = true;
+        }
+        if (isBreak) {
+            return;
+        }
+
+        send(userInfo);
+    });
+
+    return {
+        open: open,
+        close: close,
+        nameField: nameField.value,
+        phoneField: phoneField.value,
+        adressField: adressField.value
+    };
+}();
+
+callback.addEventListener('click', callbackAction.open);
 var portfolioArrowRight = document.getElementById('portfolio_next');
 var portfolioArrowLeft = document.getElementById('portfolio_prev');
 

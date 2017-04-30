@@ -124,9 +124,6 @@
 		"submit" : "Submit",
 		"name" : "Motion Template",
 		"design" : ". Design by Begha",
-		"year" : "&#169;2013",
-		"name_placeholder" : "Name (Alex)...",
-		"phone_placeholder" : "Phone (89001020300)...",
-		"adress_placeholder" : "E-mail (adress@smth.com)..."
+		"year" : "&#169;2013"
 	}
 }

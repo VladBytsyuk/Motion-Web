@@ -4,17 +4,17 @@
       <div class="logo">
         <div class="logo_title">
           <i class="sprite sprite-logo" style="margin-bottom: 10px; margin-right: 10px"></i>
-          <div id="logo_title"></div>
+          <div id="logo_title">{{ text.header.logo.title }}</div>
         </div>
-        <div id="logo_subtitle" class="logo_subtitle"></div>
+        <div id="logo_subtitle" class="logo_subtitle">{{ text.header.logo.subtitle }}</div>
       </div>
       <div id="header_menu" class="navbar_menu">
-        <div class="navbar_menu_item"></div>
-        <div class="navbar_menu_item"></div>
-        <div class="navbar_menu_item"></div>
-        <div class="navbar_menu_item"></div>
-        <div class="navbar_menu_item"></div>
-        <div class="navbar_menu_item"></div>
+        <div class="navbar_menu_item">{{ text.header.menu[0] }}</div>
+        <div class="navbar_menu_item">{{ text.header.menu[1] }}</div>
+        <div class="navbar_menu_item">{{ text.header.menu[2] }}</div>
+        <div class="navbar_menu_item">{{ text.header.menu[3] }}</div>
+        <div class="navbar_menu_item">{{ text.header.menu[4] }}</div>
+        <div class="navbar_menu_item">{{ text.header.menu[5] }}</div>
         <div id="ham" class="header_hit_zone">
           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
           <svg width="30px" height="20px" viewBox="0 0 141 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -25,12 +25,12 @@
             </g>
           </svg>
           <div id="header_popup" class="header_popup">
-            <div class="popup_item"></div>
-            <div class="popup_item"></div>
-            <div class="popup_item"></div>
-            <div class="popup_item"></div>
-            <div class="popup_item"></div>
-            <div class="popup_item"></div>
+            <div class="popup_item">{{ text.header.menu[0] }}</div>
+            <div class="popup_item">{{ text.header.menu[1] }}</div>
+            <div class="popup_item">{{ text.header.menu[2] }}</div>
+            <div class="popup_item">{{ text.header.menu[3] }}</div>
+            <div class="popup_item">{{ text.header.menu[4] }}</div>
+            <div class="popup_item">{{ text.header.menu[5] }}</div>
           </div>
         </div>
       </div>
@@ -40,8 +40,8 @@
     </div>
   </div>
   <div class="slider">
-    <div id="slider_title" class="slider_title"></div>
-    <div id="slider_subtitle" class="slider_subtitle"></div>
+    <div id="slider_title" class="slider_title">{{ text.header.slider.title }}</div>
+    <div id="slider_subtitle" class="slider_subtitle">{{ text.header.slider.subtitle }}</div>
     <img src="../../../assets/img/slider.png" class="slider_image">
   </div>
 </div>

@@ -2,7 +2,13 @@
   <div class="footer_box">
     <div class="footer_copy">
       <div class="footer_item">
-        <div id="footer_text" class="footer_text"></div>
+        <div id="footer_text" class="footer_text">
+          {{ text.footer.year }} 
+          <span style="color: #eb4f4e">
+            {{ text.footer.name }}
+          </span> 
+          {{ text.footer.design }}
+        </div>
       </div>
       <div class="footer_item">
         <i class="sprite sprite-facebook"></i>
@@ -12,15 +18,15 @@
     </div>
   </div>  
   <div id="footer_info" class="footer_info">
-    <div id="footer_title" class="footer_title"></div>
-    <div id="footer_email" class="footer_info_text"></div>
-    <div id="footer_adress" class="footer_info_text"></div>
-    <button id="callback_btn" class="footer_callback_btn"></button>
+    <div id="footer_title" class="footer_title">{{ text.footer.title }}</div>
+    <div id="footer_email" class="footer_info_text">{{ text.footer.email }}</div>
+    <div id="footer_adress" class="footer_info_text">{{ text.footer.adress }}</div>
+    <button id="callback_btn" class="footer_callback_btn">{{ text.footer.button }}</button>
     <div id="popup" class="footer_callback_content">
-      <input type="text" id="fname" class="popup_input" name="fname" required>
-      <input type="text" id="fnumber" class="popup_input" name="fnumber" required>
-      <input type="text" id="fadress" class="popup_input" name="fadress" required>
-      <button id="popup_btn" class="popup_btn"></button>
+      <input type="text" id="fname" class="popup_input" name="fname" placeholder="Name (Alex)..." required>
+      <input type="text" id="fnumber" class="popup_input" name="fnumber" placeholder="Phone (89001020300)..." required>
+      <input type="text" id="fadress" class="popup_input" name="fadress" placeholder="E-mail (adress@smth.com)..." required>
+      <button id="popup_btn" class="popup_btn">{{ text.footer.submit }}</button>
     </div>
   </div>
 </div>
