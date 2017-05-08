@@ -1,10 +1,14 @@
 let app = angular.module('motionApp', []);
 
-app.controller('controller', ['$scope', function($scope) {
+app.controller('controller', ['$scope', '$window', function($scope, $window) {
 		textGetter().then(
 			json => $scope.text = json,
-			error => console.log(error)
+			error => alert(error)
 		); 
+
+		// header
+		$scope.width = $window.innerWidth;
+	    window.onresize = () => { $scope.$apply(() => $scope.width = $window.innerWidth); };
 	}
 ]);
 
@@ -14,7 +18,6 @@ app.directive('header', () => {
 		templateUrl: 'app/components/header/header.html'
 	};
 });
-
 
 app.directive('merits', () => {
 	return { 

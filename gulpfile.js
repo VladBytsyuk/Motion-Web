@@ -97,7 +97,7 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
 gulp.task('clean', function() {
     return del.sync('dist');
 });
-
+gulp
 gulp.task('img', function() {
     return gulp.src('app/assets/img/**/*')
             .pipe(cache(imagemin({
