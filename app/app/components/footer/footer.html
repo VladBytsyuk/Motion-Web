@@ -1,4 +1,4 @@
-<div class="footer" style=" background-image: url(../../../assets/img/map.jpg) ">
+<div class="footer" style=" background-image: url(../../../assets/img/map.jpg) " ng-init="isPopupOpen = false">
   <div class="footer_box">
     <div class="footer_copy">
       <div class="footer_item">
@@ -21,12 +21,28 @@
     <div id="footer_title" class="footer_title">{{ text.footer.title }}</div>
     <div id="footer_email" class="footer_info_text">{{ text.footer.email }}</div>
     <div id="footer_adress" class="footer_info_text">{{ text.footer.adress }}</div>
-    <button id="callback_btn" class="footer_callback_btn">{{ text.footer.button }}</button>
-    <div id="popup" class="footer_callback_content">
-      <input type="text" id="fname" class="popup_input" name="fname" placeholder="Name (Alex)..." required>
-      <input type="text" id="fnumber" class="popup_input" name="fnumber" placeholder="Phone (89001020300)..." required>
-      <input type="text" id="fadress" class="popup_input" name="fadress" placeholder="E-mail (adress@smth.com)..." required>
-      <button id="popup_btn" class="popup_btn">{{ text.footer.submit }}</button>
+    <button id="callback_btn" class="footer_callback_btn" ng-click="openPopup()">{{ text.footer.button }}</button>
+    <div id="popup" class="popup_hidden" ng-class="{ 'popup_active' : isPopupOpen }">
+      <input type="text" 
+             class="popup_input" 
+             ng-class="{ 'popup_input_highlighted' : nameHighlighted }"
+             ng-model="user.name" 
+             placeholder="Name (Alex)..." 
+             required>
+      <input type="text" 
+             class="popup_input" 
+             ng-class="{ 'popup_input_highlighted' : numberHighlighted }"
+             ng-model="user.number" 
+             name="fnumber" 
+             placeholder="Phone (89001020300)..." 
+             required>
+      <input type="text" 
+             class="popup_input" 
+             ng-class="{ 'popup_input_highlighted' : adressHighlighted }"
+             ng-model="user.adress" 
+             placeholder="E-mail (adress@smth.com)..." 
+             required>
+      <button id="popup_btn" class="popup_btn" ng-click="closePopup()">{{ text.footer.submit }}</button>
     </div>
   </div>
 </div>
