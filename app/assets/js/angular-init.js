@@ -1,4 +1,42 @@
-let app = angular.module('motionApp', []);
+let app = angular.module('motionApp', ['ui.router'])
+	.config([
+		'$stateProvider',
+		'$urlRouterProvider',
+		function($stateProvider, $urlRouterProvider) {
+		  $stateProvider
+
+		    .state('team', {
+		      url: '/team',
+		      templateUrl: 'app/components/team/team.html',
+		      controller: 'controller'
+		    })
+
+		    .state('team-item0', {
+		      url: '/team-item0',
+		      templateUrl: 'app/components/team/team_item0.html',
+		      controller: 'controller'
+		    })
+
+		    .state('team-item1', {
+		      url: '/team-item1',
+		      templateUrl: 'app/components/team/team_item1.html',
+		      controller: 'controller'
+		    })
+
+		    .state('team-item2', {
+		      url: '/team-item2',
+		      templateUrl: 'app/components/team/team_item2.html',
+		      controller: 'controller'
+		    })
+
+		    .state('team-item3', {
+		      url: '/team-item3',
+		      templateUrl: 'app/components/team/team_item3.html',
+		      controller: 'controller'
+		    });
+
+	  	$urlRouterProvider.otherwise('/team');
+	}]);
 
 app.controller('controller', ['$scope', '$window', function($scope, $window) {
 		textGetter().then(

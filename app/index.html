@@ -7,12 +7,15 @@
       <link rel="shortcut icon" href="img/logo.png" type="img/logo.png">
       <link rel="stylesheet" href="assets/css/assets/sass/main.css">
       <script type="text/javascript" src="assets/libs/angular.min.js"></script>
+      <script type="text/javascript" src="assets/libs/ui-router.js"></script>
       <title>Motion</title>
     </head>
     <body ng-app="motionApp" ng-controller="controller"> 
       <header></header>
       <merits></merits>
-      <team></team>
+      <div>
+        <div ui-view></div>
+      </div>
       <portfolio></portfolio>
       <pricing></pricing>
       <tweets></tweets>
