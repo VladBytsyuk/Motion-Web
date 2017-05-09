@@ -97,7 +97,6 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
 gulp.task('clean', function() {
     return del.sync('dist');
 });
-gulp
 gulp.task('img', function() {
     return gulp.src('app/assets/img/**/*')
             .pipe(cache(imagemin({
@@ -107,33 +106,4 @@ gulp.task('img', function() {
                     use: [pngquant()]
             })))
             .pipe(gulp.dest('dist/img'));
-});
-
-gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
-    //Build Css
-    gulp.src([
-                'app/assets/css/main.css',
-                'app/assets/css/libs.min.css'
-            ])
-            .pipe(gulp.dest('dist/css'));
-
-    //Build Fonts
-    gulp.src('app/assets/fonts/**/*')
-            .pipe(gulp.dest('dist/fonts'));
-
-    //Build Js
-    gulp.src('app/assets/js/**/main.js')
-            .pipe(babel({
-                    presets: ['es2015']
-            }))
-            .pipe(uglify())
-            .pipe(gulp.dest('dist/js'));
-
-    //Build Htmls
-    gulp.src('app/*html')
-            .pipe(gulp.dest('dist'));
-
-    //Build JSON
-    gulp.src('app/assets/json/**/*.json')
-            .pipe(gulp.dest('dist/json'));
 });

@@ -38,7 +38,12 @@ let app = angular.module('motionApp', ['ui.router'])
 	  	$urlRouterProvider.otherwise('/team');
 	}]);
 
-app.controller('controller', ['$scope', '$window', function($scope, $window) {
+app.factory("auth", ["$firebaseAuth",
+  ($firebaseAuth) => $firebaseAuth(new Firebase("https://motion-web-bd9c2.firebaseio.com"))
+]);
+
+
+app.controller('controller', ['$scope', '$window', function($scope, $window, auth) {
 		textGetter().then(
 			json => $scope.text = json,
 			error => alert(error)
@@ -84,6 +89,31 @@ app.controller('controller', ['$scope', '$window', function($scope, $window) {
 	        	$scope.isPopupOpen = false;
 	        }
 	    };
+
+		$scope.login = (authMethod) => {
+		    auth.$authWithOAuthRedirect(authMethod)
+		    	.then((authData) => {})
+		    	.catch((error) => {
+				    if (error.code === 'TRANSPORT_UNAVAILABLE') {
+				        auth.$authWithOAuthPopup(authMethod)
+				        	.then((authData) => {});
+				    } else {
+				        console.log(error);
+				    }
+			    });
+
+			auth.$onAuth((authData) => {
+				if (authData === null) {
+			      console.log('Not logged in yet');
+			    } else {
+			      console.log('Logged in as', authData.uid);
+			    }
+			    // This will display the user's name in our view
+			    $scope.authData = authData;
+			});
+		};
+
+		
 	}
 ]);
 

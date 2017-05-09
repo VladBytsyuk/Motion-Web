@@ -6,8 +6,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" href="img/logo.png" type="img/logo.png">
       <link rel="stylesheet" href="assets/css/assets/sass/main.css">
-      <script type="text/javascript" src="assets/libs/angular.min.js"></script>
-      <script type="text/javascript" src="assets/libs/ui-router.js"></script>
       <title>Motion</title>
     </head>
     <body ng-app="motionApp" ng-controller="controller"> 
@@ -21,6 +19,21 @@
       <tweets></tweets>
       <footer></footer>
       
+      <script type="text/javascript" src="assets/libs/angular.min.js"></script>
+      <script type="text/javascript" src="assets/libs/ui-router.js"></script>
+      <script type="text/javascript" src="assets/libs/firebase.js"></script>
       <script type="text/javascript" src="assets/js/main.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyDEv4PaVPfxFFLW0_nM-icLuyX1Wukmkss",
+          authDomain: "motion-web-bd9c2.firebaseapp.com",
+          databaseURL: "https://motion-web-bd9c2.firebaseio.com",
+          projectId: "motion-web-bd9c2",
+          storageBucket: "motion-web-bd9c2.appspot.com",
+          messagingSenderId: "982995178936"
+        };
+        firebase.initializeApp(config);
+      </script>
     </body>
   </html>

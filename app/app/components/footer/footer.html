@@ -11,9 +11,10 @@
         </div>
       </div>
       <div class="footer_item">
-        <i class="sprite sprite-facebook"></i>
-        <i class="sprite sprite-tweet-ic"></i>
+        <i class="sprite sprite-facebook" ng-click="login('facebook')"></i>
+        <i class="sprite sprite-tweet-ic" ng-click="login('twitter')"></i>
         <i class="sprite sprite-rss"></i>
+        {{ authData.facebook.displayName }}
       </div>
     </div>
   </div>  
