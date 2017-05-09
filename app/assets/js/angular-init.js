@@ -10,15 +10,9 @@ app.controller('controller', ['$scope', '$window', function($scope, $window) {
 		$scope.boxHeight = angular.element(document.querySelector('portfolio_box_invisible')).offsetHeight;
 	    window.onresize = () => { 
 	    	$scope.$apply(() => {
-	    		$scope.width = $window.innerWidth
-	    		$scope.boxHeight = angular.element(document.querySelector('portfolio_box_invisible')).offsetHeight;
-	    		console.log(angular.element(document.querySelector('portfolio_box_invisible')));
+	    		$scope.width = $window.innerWidth;
 	    	});
 	    };
-	    $scope.isPortfolioSlideActive = (x) => x == $scope.curSlide;
-	    $scope.portfolioBoxStyle = {
-		    "margin-top" : '-' + $scope.boxHeight + 'px'
-		};
 	}
 ]);
 

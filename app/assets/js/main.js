@@ -16,15 +16,7 @@ app.controller('controller', ['$scope', '$window', function ($scope, $window) {
 	window.onresize = function () {
 		$scope.$apply(function () {
 			$scope.width = $window.innerWidth;
-			$scope.boxHeight = angular.element(document.querySelector('portfolio_box_invisible')).offsetHeight;
-			console.log(angular.element(document.querySelector('portfolio_box_invisible')));
 		});
-	};
-	$scope.isPortfolioSlideActive = function (x) {
-		return x == $scope.curSlide;
-	};
-	$scope.portfolioBoxStyle = {
-		"margin-top": '-' + $scope.boxHeight + 'px'
 	};
 }]);
 
@@ -4551,42 +4543,42 @@ function textGetter() {
 // };
 
 // callback.addEventListener('click', callbackAction.open);
-// const tweetsArrowRight = angular.element('tweets_next');
-// const tweetsArrowLeft = angular.element('tweets_prev');
+var tweetsArrowRight = angular.element('tweets_next');
+var tweetsArrowLeft = angular.element('tweets_prev');
 
-// const tweetsSlider = new function() {
-//     const slideHolder = angular.element('tweets_hearth');
-//     const slides = slideHolder.getElementsByClassName('tweets_hearth_tweet');
-//     const slidesAmount = slides.length;
-//     let currentSlide = 0;
-//     slides[currentSlide].style.opacity = 1;
-//     init(undefined);
+var tweetsSlider = new function () {
+	var slideHolder = angular.element('tweets_hearth');
+	var slides = slideHolder.getElementsByClassName('tweets_hearth_tweet');
+	var slidesAmount = slides.length;
+	var currentSlide = 0;
+	slides[currentSlide].style.opacity = 1;
+	init(undefined);
 
-//     function init(event) {
-//         slideHolder.style.width = slides[currentSlide].clientWidth + 'px';
-//         slideHolder.style.height =  slides[currentSlide].clientHeight + 'px';
-//     }
+	function init(event) {
+		slideHolder.style.width = slides[currentSlide].clientWidth + 'px';
+		slideHolder.style.height = slides[currentSlide].clientHeight + 'px';
+	}
 
-//     function nextSlide() {
-//         slides[currentSlide].style.opacity = 0;
-//         currentSlide = currentSlide < slidesAmount - 1 ? currentSlide + 1 : 0;
-//         slides[currentSlide].style.opacity = 1;
-//     }
+	function nextSlide() {
+		slides[currentSlide].style.opacity = 0;
+		currentSlide = currentSlide < slidesAmount - 1 ? currentSlide + 1 : 0;
+		slides[currentSlide].style.opacity = 1;
+	}
 
-//     function prevSlide() {
-//         slides[currentSlide].style.opacity = 0;
-//         currentSlide = currentSlide > 0 ? currentSlide - 1 : slidesAmount - 1;
-//         slides[currentSlide].style.opacity = 1;
-//     }
+	function prevSlide() {
+		slides[currentSlide].style.opacity = 0;
+		currentSlide = currentSlide > 0 ? currentSlide - 1 : slidesAmount - 1;
+		slides[currentSlide].style.opacity = 1;
+	}
 
-//     return {
-//         init: init,
-//         nextSlide: nextSlide,
-//         prevSlide: prevSlide,
-//         currentSlide: currentSlide,
-//         slidesAmount: slidesAmount
-//     }
-// };
+	return {
+		init: init,
+		nextSlide: nextSlide,
+		prevSlide: prevSlide,
+		currentSlide: currentSlide,
+		slidesAmount: slidesAmount
+	};
+}();
 
-// tweetsArrowRight.addEventListener('click', tweetsSlider.nextSlide);
-// tweetsArrowLeft.addEventListener('click', tweetsSlider.prevSlide);
+tweetsArrowRight.addEventListener('click', tweetsSlider.nextSlide);
+tweetsArrowLeft.addEventListener('click', tweetsSlider.prevSlide);

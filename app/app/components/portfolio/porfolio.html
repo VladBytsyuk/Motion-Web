@@ -11,26 +11,7 @@
       <i class="sprite sprite-arrow-left"></i>
     </div>
     <div id="portfolio_holder" class="portfolio_holder">
-      <div id="portfolio_box_invisible" class="portfolio_box_invisible">
-        <div class="portfolio_item">
-          <img src="../../../assets/img/sms-clouds.jpg" class="portfolio_image">
-          <div class="portfolio_name">{{ text.portfolio.box[0][0] }}</div>
-        </div>
-        <div class="portfolio_item">
-          <img src="../../../assets/img/blue-apple.jpg" class="portfolio_image">
-          <div class="portfolio_name">{{ text.portfolio.box[0][1] }}</div>
-        </div>
-        <div class="portfolio_item">
-          <img src="../../../assets/img/together-app.jpg" class="portfolio_image">
-          <div class="portfolio_name">{{ text.portfolio.box[0][2] }}</div>
-        </div>
-        <div class="portfolio_item">
-          <img src="../../../assets/img/fc-barcelona.jpg" class="portfolio_image">
-          <div class="portfolio_name">{{ text.portfolio.box[0][3] }}</div>
-        </div>
-      </div>
-      <div ng-class="{true : 'portfolio_box_active', false : 'portfolio_box'}[isPortfolioSlideActive(0)]"
-           ng-style="portfolioBoxStyle">
+      <div class="portfolio_box" ng-class="{ 'portfolio_box_active' : curSlide == 0 }">
         <div class="portfolio_item">
           <img src="../../../assets/img/sms-clouds.jpg" class="portfolio_image">
           <div class="portfolio_name">{{ text.portfolio.box[0][0] }}</div>
@@ -48,8 +29,7 @@
  	        <div class="portfolio_name">{{ text.portfolio.box[0][3] }}</div>
         </div>
       </div>
-      <div ng-class="{true : 'portfolio_box_active', false : 'portfolio_box'}[isPortfolioSlideActive(1)]"
-           ng-style="portfolioBoxStyle">
+      <div class="portfolio_box" ng-class="{ 'portfolio_box_active' : curSlide == 1 }">
         <div class="portfolio_item">
           <img src="../../../assets/img/angular.jpg" class="portfolio_image">
           <div class="portfolio_name">{{ text.portfolio.box[1][0] }}</div>
@@ -67,8 +47,7 @@
           <div class="portfolio_name">{{ text.portfolio.box[1][3] }}</div>
         </div>
       </div>
-      <div ng-class="{true : 'portfolio_box_active', false : 'portfolio_box'}[isPortfolioSlideActive(2)]"
-           ng-style="portfolioBoxStyle">
+      <div class="portfolio_box" ng-class="{ 'portfolio_box_active' : curSlide == 2 }">
         <div class="portfolio_item">
           <img src="../../../assets/img/guardian.jpg" class="portfolio_image">
           <div class="portfolio_name">{{ text.portfolio.box[2][0] }}</div>
@@ -86,8 +65,7 @@
           <div class="portfolio_name">{{ text.portfolio.box[2][3] }}</div>
         </div>
       </div>
-      <div ng-class="{true : 'portfolio_box_active', false : 'portfolio_box'}[isPortfolioSlideActive(3)]"
-           ng-style="portfolioBoxStyle">
+      <div class="portfolio_box" ng-class="{ 'portfolio_box_active' : curSlide == 3 }">
         <div class="portfolio_item">
           <img src="../../../assets/img/tnw.jpg" class="portfolio_image">
           <div class="portfolio_name">{{ text.portfolio.box[3][0] }}</div>
@@ -114,9 +92,9 @@
     </div>
   </div>
   <div class="portfolio_pages">
-    <div class="portfolio_pages_item" ng-class="{ 'portfolio_pages_item_highlighted' : isPortfolioSlideActive(0) }">s</div>
-    <div class="portfolio_pages_item" ng-class="{ 'portfolio_pages_item_highlighted' : isPortfolioSlideActive(1) }">s</div>
-    <div class="portfolio_pages_item" ng-class="{ 'portfolio_pages_item_highlighted' : isPortfolioSlideActive(2) }">s</div>
-    <div class="portfolio_pages_item" ng-class="{ 'portfolio_pages_item_highlighted' : isPortfolioSlideActive(3) }">s</div>
+    <div class="portfolio_pages_item" ng-class="{ 'portfolio_pages_item_highlighted' : curSlide == 0 }">s</div>
+    <div class="portfolio_pages_item" ng-class="{ 'portfolio_pages_item_highlighted' : curSlide == 1 }">s</div>
+    <div class="portfolio_pages_item" ng-class="{ 'portfolio_pages_item_highlighted' : curSlide == 2 }">s</div>
+    <div class="portfolio_pages_item" ng-class="{ 'portfolio_pages_item_highlighted' : curSlide == 3 }">s</div>
   </div>
 </div>
