@@ -1,27 +1,27 @@
-<div class="tweets">
+<div class="tweets" ng-init="currentSlide = 0">
   <div id="tweets_title" class="tweets_title">{{ text.tweets.title }}</div>
   <div id="tweets_subtitle" class="tweets_subtitle">{{ text.tweets.subtitle }}</div>
   <i class="sprite sprite-tweet"></i>
   <div class="tweet_slider">
-    <div id="tweets_prev" class="tweet_hit_zone">
+    <div id="tweets_prev" class="tweet_hit_zone" ng-click="currentSlide = currentSlide > 0 ? currentSlide - 1 : 2">
       <i class="sprite sprite-arrow-left-b"></i>
     </div>
     <div id="tweets_hearth" class="tweets_hearth">
-        <div class="tweets_hearth_tweet">
+        <div class="tweets_slide" ng-class="{'tweets_slide_active' : currentSlide == 0 }">
           {{ text.tweets.box[0].name }}
           <span style="color:white">
             {{ text.tweets.box[0].text }}
           </span> 
           {{ text.tweets.box[0].link }}
         </div>
-        <div class="tweets_hearth_tweet">
+        <div class="tweets_slide" ng-class="{'tweets_slide_active' : currentSlide == 1 }">
           {{ text.tweets.box[1].name }}
           <span style="color:white">
             {{ text.tweets.box[1].text }}
           </span> 
           {{ text.tweets.box[1].link }}
         </div>
-        <div class="tweets_hearth_tweet">
+        <div class="tweets_slide" ng-class="{'tweets_slide_active' : currentSlide == 2 }">
           {{ text.tweets.box[2].name }}
           <span style="color:white">
             {{ text.tweets.box[2].text }}
@@ -29,7 +29,7 @@
           {{ text.tweets.box[2].link }}
         </div>
     </div>
-    <div id="tweets_next" class="tweet_hit_zone">
+    <div id="tweets_next" class="tweet_hit_zone" ng-click="currentSlide = currentSlide < 2 ? currentSlide + 1 : 0">
       <i class="sprite sprite-arrow-right-b"></i>
     </div>
   </div>

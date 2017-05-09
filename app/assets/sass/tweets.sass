@@ -25,6 +25,8 @@ $background: #eb4f4e
 	padding-left: 20px
 	padding-right: 20px
 	text-align: left
+	display: flex
+	justify-content: center
 
 .tweets_title
 	font-size: 40pt
@@ -39,14 +41,19 @@ $background: #eb4f4e
 	font-size: 20pt
 	color: black
 
-.tweets_hearth_tweet
+.tweets_slide
+	display: none
+
+.tweets_slide_active
 	width: 60%
-	position: absolute
+	display: block
 	font-size: 20pt
 	font-family: 'bariol-italic', 'bariol'
 	color: black
-	opacity: 0
+	opacity: 1
 	transition: opacity 1s
+	animation-name: enableSlide
+	animation-duration: 1s
 
 .tweet_hit_zone
 	padding: 30px
@@ -63,3 +70,9 @@ $background: #eb4f4e
 	.tweets_title
 		padding-top: 20px
 		padding-bottom: 20px
+
+@keyframes enableSlide
+	0%
+		opacity: 0
+	100%
+		opacity: 1
